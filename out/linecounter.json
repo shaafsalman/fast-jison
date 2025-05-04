@@ -1,0 +1,2743 @@
+{
+    "extension": "linecounter",
+    "version": "0.2.7",
+    "workspace": "/Users/shaafsalman/Desktop/jison",
+    "linecount": [
+        {
+            "version": "0.2.7",
+            "counttime": "2025-05-04 13:57:54",
+            "filesum": 318,
+            "codesum": 28590,
+            "commentsum": 5322,
+            "blanksum": 5371,
+            "statistics": {
+                ".js": {
+                    "code": 23510,
+                    "comment": 5188,
+                    "blank": 4598
+                },
+                ".yml": {
+                    "code": 3,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".php": {
+                    "code": 493,
+                    "comment": 30,
+                    "blank": 98
+                },
+                "": {
+                    "code": 242,
+                    "comment": 34,
+                    "blank": 17
+                },
+                ".md": {
+                    "code": 104,
+                    "comment": 16,
+                    "blank": 45
+                },
+                ".src": {
+                    "code": 16,
+                    "comment": 0,
+                    "blank": 3
+                },
+                ".jison": {
+                    "code": 2306,
+                    "comment": 50,
+                    "blank": 481
+                },
+                ".json": {
+                    "code": 1542,
+                    "comment": 1,
+                    "blank": 66
+                },
+                ".y": {
+                    "code": 32,
+                    "comment": 0,
+                    "blank": 3
+                },
+                ".txt": {
+                    "code": 1,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".jisonlex": {
+                    "code": 47,
+                    "comment": 1,
+                    "blank": 5
+                },
+                ".rb": {
+                    "code": 0,
+                    "comment": 2,
+                    "blank": 0
+                },
+                ".html": {
+                    "code": 294,
+                    "comment": 0,
+                    "blank": 55
+                }
+            },
+            "filelist": [
+                {
+                    "blank": 1,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": ".gitignore"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/algorithms/lookahead_20250503192807.js"
+                },
+                {
+                    "blank": 30,
+                    "code": 173,
+                    "comment": 60,
+                    "filename": ".history/lib/algorithms/lookahead_20250503193137.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/algorithms/table-builder_20250503192807.js"
+                },
+                {
+                    "blank": 40,
+                    "code": 187,
+                    "comment": 93,
+                    "filename": ".history/lib/algorithms/table-builder_20250503193216.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/cli/grammar-processor_20250503192807.js"
+                },
+                {
+                    "blank": 11,
+                    "code": 38,
+                    "comment": 27,
+                    "filename": ".history/lib/cli/grammar-processor_20250503193055.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/cli/grammar_20250503192455"
+                },
+                {
+                    "blank": 11,
+                    "code": 38,
+                    "comment": 23,
+                    "filename": ".history/lib/cli/grammar_20250503192502"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/cli/index_20250503192102.js"
+                },
+                {
+                    "blank": 20,
+                    "code": 70,
+                    "comment": 61,
+                    "filename": ".history/lib/cli/index_20250503192413.js"
+                },
+                {
+                    "blank": 19,
+                    "code": 62,
+                    "comment": 67,
+                    "filename": ".history/lib/cli/index_20250503193109.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/cli/index_20250503193112.js"
+                },
+                {
+                    "blank": 21,
+                    "code": 73,
+                    "comment": 70,
+                    "filename": ".history/lib/cli/index_20250503193117.js"
+                },
+                {
+                    "blank": 24,
+                    "code": 155,
+                    "comment": 16,
+                    "filename": ".history/lib/cli/index_20250504124623.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/cli/options_20250503192102.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 71,
+                    "comment": 16,
+                    "filename": ".history/lib/cli/options_20250503192351.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 53,
+                    "comment": 15,
+                    "filename": ".history/lib/cli/options_20250503193017.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 71,
+                    "comment": 20,
+                    "filename": ".history/lib/cli/options_20250503193046.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/cli_20250504052219.js"
+                },
+                {
+                    "blank": 11,
+                    "code": 51,
+                    "comment": 11,
+                    "filename": ".history/lib/cli_20250504052408.js"
+                },
+                {
+                    "blank": 24,
+                    "code": 154,
+                    "comment": 13,
+                    "filename": ".history/lib/cli_20250504131145.js"
+                },
+                {
+                    "blank": 25,
+                    "code": 153,
+                    "comment": 15,
+                    "filename": ".history/lib/cli_20250504132048.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/common/constants_20250504051056.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 4,
+                    "comment": 14,
+                    "filename": ".history/lib/common/constants_20250504051147.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/common/helpers_20250504051056.js"
+                },
+                {
+                    "blank": 13,
+                    "code": 62,
+                    "comment": 16,
+                    "filename": ".history/lib/common/helpers_20250504051154.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/core/code-generator_20250503192807.js"
+                },
+                {
+                    "blank": 49,
+                    "code": 238,
+                    "comment": 84,
+                    "filename": ".history/lib/core/code-generator_20250503194451.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/core/code-generator_20250503194524.js"
+                },
+                {
+                    "blank": 109,
+                    "code": 492,
+                    "comment": 194,
+                    "filename": ".history/lib/core/code-generator_20250503194902.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/core/Generator_20250504130517.js"
+                },
+                {
+                    "blank": 43,
+                    "code": 168,
+                    "comment": 26,
+                    "filename": ".history/lib/core/Generator_20250504130626.js"
+                },
+                {
+                    "blank": 43,
+                    "code": 168,
+                    "comment": 26,
+                    "filename": ".history/lib/core/Generator_20250504130952.js"
+                },
+                {
+                    "blank": 43,
+                    "code": 169,
+                    "comment": 26,
+                    "filename": ".history/lib/core/Generator_20250504132104.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/core/grammar_20250503192102.js"
+                },
+                {
+                    "blank": 14,
+                    "code": 57,
+                    "comment": 32,
+                    "filename": ".history/lib/core/grammar_20250503192203.js"
+                },
+                {
+                    "blank": 16,
+                    "code": 64,
+                    "comment": 37,
+                    "filename": ".history/lib/core/grammar_20250503192945.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/core/item-set_20250504052606.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 40,
+                    "comment": 9,
+                    "filename": ".history/lib/core/item-set_20250504052705.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/core/item_20250504052606.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 29,
+                    "comment": 9,
+                    "filename": ".history/lib/core/item_20250504052659.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/core/jison-engine_20250504052219.js"
+                },
+                {
+                    "blank": 6,
+                    "code": 25,
+                    "comment": 10,
+                    "filename": ".history/lib/core/jison-engine_20250504052246.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/core/nonterminal_20250503192807.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 23,
+                    "comment": 24,
+                    "filename": ".history/lib/core/nonterminal_20250503192931.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 20,
+                    "comment": 9,
+                    "filename": ".history/lib/core/nonterminal_20250504052653.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/core/parser_20250504052219.js"
+                },
+                {
+                    "blank": 8,
+                    "code": 32,
+                    "comment": 13,
+                    "filename": ".history/lib/core/parser_20250504052253.js"
+                },
+                {
+                    "blank": 34,
+                    "code": 210,
+                    "comment": 46,
+                    "filename": ".history/lib/core/parser_20250504124607.js"
+                },
+                {
+                    "blank": 31,
+                    "code": 205,
+                    "comment": 44,
+                    "filename": ".history/lib/core/parser_20250504130613.js"
+                },
+                {
+                    "blank": 31,
+                    "code": 205,
+                    "comment": 44,
+                    "filename": ".history/lib/core/parser_20250504130942.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/core/production_20250503192807.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 26,
+                    "comment": 27,
+                    "filename": ".history/lib/core/production_20250503192939.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/core/production_20250504052644.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 15,
+                    "comment": 9,
+                    "filename": ".history/lib/core/production_20250504052646.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/factories/lexer-factory_20250504052219.js"
+                },
+                {
+                    "blank": 9,
+                    "code": 44,
+                    "comment": 18,
+                    "filename": ".history/lib/factories/lexer-factory_20250504052401.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/factories/parser-factory_20250504052219.js"
+                },
+                {
+                    "blank": 8,
+                    "code": 27,
+                    "comment": 12,
+                    "filename": ".history/lib/factories/parser-factory_20250504052354.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/generator/generator_20250504051056.js"
+                },
+                {
+                    "blank": 76,
+                    "code": 385,
+                    "comment": 34,
+                    "filename": ".history/lib/generator/generator_20250504051338.js"
+                },
+                {
+                    "blank": 81,
+                    "code": 413,
+                    "comment": 41,
+                    "filename": ".history/lib/generator/generator_20250504051610.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/generators/generator-base_20250504052606.js"
+                },
+                {
+                    "blank": 50,
+                    "code": 220,
+                    "comment": 31,
+                    "filename": ".history/lib/generators/generator-base_20250504124421.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/generators/lalr-generator_20250504052606.js"
+                },
+                {
+                    "blank": 22,
+                    "code": 121,
+                    "comment": 21,
+                    "filename": ".history/lib/generators/lalr-generator_20250504124447.js"
+                },
+                {
+                    "blank": 22,
+                    "code": 130,
+                    "comment": 21,
+                    "filename": ".history/lib/generators/lalr-generator_20250504125204.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/generators/LALRGenerator_20250504130517.js"
+                },
+                {
+                    "blank": 20,
+                    "code": 119,
+                    "comment": 17,
+                    "filename": ".history/lib/generators/LALRGenerator_20250504130754.js"
+                },
+                {
+                    "blank": 20,
+                    "code": 119,
+                    "comment": 17,
+                    "filename": ".history/lib/generators/LALRGenerator_20250504131051.js"
+                },
+                {
+                    "blank": 20,
+                    "code": 121,
+                    "comment": 17,
+                    "filename": ".history/lib/generators/LALRGenerator_20250504131917.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/generators/ll-generator_20250504052606.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 33,
+                    "comment": 12,
+                    "filename": ".history/lib/generators/ll-generator_20250504124518.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 39,
+                    "comment": 12,
+                    "filename": ".history/lib/generators/ll-generator_20250504125223.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/generators/LLGenerator_20250504130853.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 23,
+                    "comment": 11,
+                    "filename": ".history/lib/generators/LLGenerator_20250504131114.js"
+                },
+                {
+                    "blank": 6,
+                    "code": 33,
+                    "comment": 11,
+                    "filename": ".history/lib/generators/LLGenerator_20250504131122.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/generators/lr0-generator_20250504052606.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 11,
+                    "comment": 12,
+                    "filename": ".history/lib/generators/lr0-generator_20250504124434.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 18,
+                    "comment": 12,
+                    "filename": ".history/lib/generators/lr0-generator_20250504125155.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/generators/LR0Generator_20250504130517.js"
+                },
+                {
+                    "blank": 54,
+                    "code": 391,
+                    "comment": 54,
+                    "filename": ".history/lib/generators/LR0Generator_20250504130702.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 11,
+                    "comment": 9,
+                    "filename": ".history/lib/generators/LR0Generator_20250504130735.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 11,
+                    "comment": 9,
+                    "filename": ".history/lib/generators/LR0Generator_20250504131028.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/generators/lr1-generator_20250504052606.js"
+                },
+                {
+                    "blank": 12,
+                    "code": 52,
+                    "comment": 14,
+                    "filename": ".history/lib/generators/lr1-generator_20250504124504.js"
+                },
+                {
+                    "blank": 12,
+                    "code": 59,
+                    "comment": 14,
+                    "filename": ".history/lib/generators/lr1-generator_20250504125215.js"
+                },
+                {
+                    "blank": 16,
+                    "code": 78,
+                    "comment": 15,
+                    "filename": ".history/lib/generators/lr1-generator_20250504125354.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/generators/LR1Generator_20250504130517.js"
+                },
+                {
+                    "blank": 12,
+                    "code": 55,
+                    "comment": 13,
+                    "filename": ".history/lib/generators/LR1Generator_20250504130802.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/generators/LR1Generator_20250504130837.js"
+                },
+                {
+                    "blank": 12,
+                    "code": 55,
+                    "comment": 13,
+                    "filename": ".history/lib/generators/LR1Generator_20250504131106.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/generators/slr-generator_20250504052606.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 10,
+                    "comment": 11,
+                    "filename": ".history/lib/generators/slr-generator_20250504124456.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 18,
+                    "comment": 12,
+                    "filename": ".history/lib/generators/slr-generator_20250504125059.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/generators/SLRGenerator_20250504130517.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 16,
+                    "comment": 11,
+                    "filename": ".history/lib/generators/SLRGenerator_20250504130744.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 16,
+                    "comment": 11,
+                    "filename": ".history/lib/generators/SLRGenerator_20250504131043.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/index_20250504052219.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 10,
+                    "comment": 7,
+                    "filename": ".history/lib/index_20250504052237.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 37,
+                    "comment": 12,
+                    "filename": ".history/lib/index_20250504131132.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/jison_20250503192807.js"
+                },
+                {
+                    "blank": 8,
+                    "code": 22,
+                    "comment": 38,
+                    "filename": ".history/lib/jison_20250503193258.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 36,
+                    "comment": 17,
+                    "filename": ".history/lib/jison_20250504124633.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/parser/parser_20250504051056.js"
+                },
+                {
+                    "blank": 49,
+                    "code": 213,
+                    "comment": 53,
+                    "filename": ".history/lib/parser/parser_20250504051209.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/parsers/base_20250504130853.js"
+                },
+                {
+                    "blank": 48,
+                    "code": 317,
+                    "comment": 40,
+                    "filename": ".history/lib/parsers/base_20250504131158.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/parsers/lalr_20250503192807.js"
+                },
+                {
+                    "blank": 48,
+                    "code": 153,
+                    "comment": 68,
+                    "filename": ".history/lib/parsers/lalr_20250503193317.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/parsers/lalr_20250503193326.js"
+                },
+                {
+                    "blank": 117,
+                    "code": 448,
+                    "comment": 185,
+                    "filename": ".history/lib/parsers/lalr_20250503193421.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/parsers/ll1_20250503192807.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": ".history/lib/parsers/ll1_20250503194304.js"
+                },
+                {
+                    "blank": 66,
+                    "code": 219,
+                    "comment": 120,
+                    "filename": ".history/lib/parsers/ll1_20250503194308.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/parsers/lr-item_20250503193624.js"
+                },
+                {
+                    "blank": 13,
+                    "code": 66,
+                    "comment": 61,
+                    "filename": ".history/lib/parsers/lr-item_20250503193632.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/parsers/lr0_20250503192807.js"
+                },
+                {
+                    "blank": 80,
+                    "code": 285,
+                    "comment": 144,
+                    "filename": ".history/lib/parsers/lr0_20250503193559.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/parsers/lr1_20250503192807.js"
+                },
+                {
+                    "blank": 93,
+                    "code": 342,
+                    "comment": 200,
+                    "filename": ".history/lib/parsers/lr1_20250503194053.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/parsers/LRParser_20250504130517.js"
+                },
+                {
+                    "blank": 54,
+                    "code": 391,
+                    "comment": 54,
+                    "filename": ".history/lib/parsers/LRParser_20250504130722.js"
+                },
+                {
+                    "blank": 54,
+                    "code": 391,
+                    "comment": 54,
+                    "filename": ".history/lib/parsers/LRParser_20250504131012.js"
+                },
+                {
+                    "blank": 55,
+                    "code": 401,
+                    "comment": 55,
+                    "filename": ".history/lib/parsers/LRParser_20250504131334.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/parsers/parser-base_20250503192102.js"
+                },
+                {
+                    "blank": 10,
+                    "code": 36,
+                    "comment": 37,
+                    "filename": ".history/lib/parsers/parser-base_20250503192325.js"
+                },
+                {
+                    "blank": 12,
+                    "code": 41,
+                    "comment": 42,
+                    "filename": ".history/lib/parsers/parser-base_20250503192956.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/parsers/parser-factory_20250503192807.js"
+                },
+                {
+                    "blank": 11,
+                    "code": 27,
+                    "comment": 32,
+                    "filename": ".history/lib/parsers/parser-factory_20250503193008.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/parsers/slr_20250503192807.js"
+                },
+                {
+                    "blank": 82,
+                    "code": 290,
+                    "comment": 151,
+                    "filename": ".history/lib/parsers/slr_20250503193833.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/patterns/conditional-handler_20250504052219.js"
+                },
+                {
+                    "blank": 10,
+                    "code": 39,
+                    "comment": 9,
+                    "filename": ".history/lib/patterns/conditional-handler_20250504052345.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/patterns/method-object_20250504052219.js"
+                },
+                {
+                    "blank": 10,
+                    "code": 41,
+                    "comment": 16,
+                    "filename": ".history/lib/patterns/method-object_20250504052337.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/util/debug-mixins_20250504052606.js"
+                },
+                {
+                    "blank": 15,
+                    "code": 77,
+                    "comment": 14,
+                    "filename": ".history/lib/util/debug-mixins_20250504052911.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/util/error-handler_20250503192102.js"
+                },
+                {
+                    "blank": 9,
+                    "code": 48,
+                    "comment": 27,
+                    "filename": ".history/lib/util/error-handler_20250503192336.js"
+                },
+                {
+                    "blank": 9,
+                    "code": 48,
+                    "comment": 31,
+                    "filename": ".history/lib/util/error-handler_20250503192849.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/util/helper_20250504052219.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 19,
+                    "comment": 8,
+                    "filename": ".history/lib/util/helper_20250504052310.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/util/lookahead-mixin_20250504052606.js"
+                },
+                {
+                    "blank": 21,
+                    "code": 136,
+                    "comment": 29,
+                    "filename": ".history/lib/util/lookahead-mixin_20250504052711.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/util/lr-generator-mixin_20250504052606.js"
+                },
+                {
+                    "blank": 37,
+                    "code": 192,
+                    "comment": 38,
+                    "filename": ".history/lib/util/lr-generator-mixin_20250504052720.js"
+                },
+                {
+                    "blank": 75,
+                    "code": 416,
+                    "comment": 61,
+                    "filename": ".history/lib/util/lr-generator-mixin_20250504052903.js"
+                },
+                {
+                    "blank": 75,
+                    "code": 417,
+                    "comment": 61,
+                    "filename": ".history/lib/util/lr-generator-mixin_20250504125415.js"
+                },
+                {
+                    "blank": 83,
+                    "code": 492,
+                    "comment": 64,
+                    "filename": ".history/lib/util/lr-generator-mixin_20250504125848.js"
+                },
+                {
+                    "blank": 83,
+                    "code": 493,
+                    "comment": 65,
+                    "filename": ".history/lib/util/lr-generator-mixin_20250504125932.js"
+                },
+                {
+                    "blank": 84,
+                    "code": 493,
+                    "comment": 65,
+                    "filename": ".history/lib/util/lr-generator-mixin_20250504125933.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/util/set_20250503192807.js"
+                },
+                {
+                    "blank": 26,
+                    "code": 112,
+                    "comment": 110,
+                    "filename": ".history/lib/util/set_20250503192904.js"
+                },
+                {
+                    "blank": 26,
+                    "code": 112,
+                    "comment": 110,
+                    "filename": ".history/lib/util/set_20250503192917.js"
+                },
+                {
+                    "blank": 24,
+                    "code": 108,
+                    "comment": 13,
+                    "filename": ".history/lib/util/set_20250504051137.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 12,
+                    "comment": 8,
+                    "filename": ".history/lib/util/set_20250504052303.js"
+                },
+                {
+                    "blank": 24,
+                    "code": 106,
+                    "comment": 13,
+                    "filename": ".history/lib/util/set_20250504052630.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/util/symbol-table_20250503192311.js"
+                },
+                {
+                    "blank": 8,
+                    "code": 32,
+                    "comment": 38,
+                    "filename": ".history/lib/util/symbol-table_20250503192317.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/util/typal_20250503192807.js"
+                },
+                {
+                    "blank": 14,
+                    "code": 72,
+                    "comment": 42,
+                    "filename": ".history/lib/util/typal_20250503192856.js"
+                },
+                {
+                    "blank": 14,
+                    "code": 65,
+                    "comment": 19,
+                    "filename": ".history/lib/util/typal_20250504051130.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 19,
+                    "comment": 9,
+                    "filename": ".history/lib/util/typal_20250504052321.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 25,
+                    "comment": 0,
+                    "filename": ".history/lib/util/typal_20250504052616.js"
+                },
+                {
+                    "blank": 10,
+                    "code": 68,
+                    "comment": 19,
+                    "filename": ".history/lib/util/typal_20250504052622.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/utils/Set_20250504130517.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 85,
+                    "comment": 8,
+                    "filename": ".history/lib/utils/Set_20250504130536.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 85,
+                    "comment": 8,
+                    "filename": ".history/lib/utils/Set_20250504130930.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/lib/utils/Typal_20250504130517.js"
+                },
+                {
+                    "blank": 6,
+                    "code": 64,
+                    "comment": 8,
+                    "filename": ".history/lib/utils/Typal_20250504130529.js"
+                },
+                {
+                    "blank": 6,
+                    "code": 64,
+                    "comment": 8,
+                    "filename": ".history/lib/utils/Typal_20250504130921.js"
+                },
+                {
+                    "blank": 11,
+                    "code": 47,
+                    "comment": 8,
+                    "filename": ".history/run-tests_20250504133816.js"
+                },
+                {
+                    "blank": 12,
+                    "code": 50,
+                    "comment": 8,
+                    "filename": ".history/run-tests_20250504135014.js"
+                },
+                {
+                    "blank": 12,
+                    "code": 57,
+                    "comment": 8,
+                    "filename": ".history/run-tests_20250504135029.js"
+                },
+                {
+                    "blank": 12,
+                    "code": 57,
+                    "comment": 8,
+                    "filename": ".history/run-tests_20250504135701.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/tests/basic-tests_20250504133907.js"
+                },
+                {
+                    "blank": 6,
+                    "code": 23,
+                    "comment": 7,
+                    "filename": ".history/tests/basic-tests_20250504133908.js"
+                },
+                {
+                    "blank": 6,
+                    "code": 23,
+                    "comment": 7,
+                    "filename": ".history/tests/basic-tests_20250504134202.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/tests/create-grammar_20250504133855.js"
+                },
+                {
+                    "blank": 40,
+                    "code": 238,
+                    "comment": 12,
+                    "filename": ".history/tests/create-grammar_20250504133859.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/tests/error-tests_20250504134031.js"
+                },
+                {
+                    "blank": 33,
+                    "code": 144,
+                    "comment": 29,
+                    "filename": ".history/tests/error-tests_20250504134034.js"
+                },
+                {
+                    "blank": 33,
+                    "code": 144,
+                    "comment": 29,
+                    "filename": ".history/tests/error-tests_20250504134223.js"
+                },
+                {
+                    "blank": 33,
+                    "code": 144,
+                    "comment": 29,
+                    "filename": ".history/tests/error-tests_20250504134643.js"
+                },
+                {
+                    "blank": 33,
+                    "code": 144,
+                    "comment": 29,
+                    "filename": ".history/tests/error-tests_20250504134708.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/tests/generator-tests_20250504133921.js"
+                },
+                {
+                    "blank": 13,
+                    "code": 85,
+                    "comment": 10,
+                    "filename": ".history/tests/generator-tests_20250504133923.js"
+                },
+                {
+                    "blank": 13,
+                    "code": 85,
+                    "comment": 10,
+                    "filename": ".history/tests/generator-tests_20250504134228.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/tests/integration-tests_20250504134045.js"
+                },
+                {
+                    "blank": 39,
+                    "code": 107,
+                    "comment": 34,
+                    "filename": ".history/tests/integration-tests_20250504134047.js"
+                },
+                {
+                    "blank": 39,
+                    "code": 107,
+                    "comment": 34,
+                    "filename": ".history/tests/integration-tests_20250504134745.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/tests/module-type-tests_20250504133959.js"
+                },
+                {
+                    "blank": 19,
+                    "code": 48,
+                    "comment": 16,
+                    "filename": ".history/tests/module-type-tests_20250504134001.js"
+                },
+                {
+                    "blank": 19,
+                    "code": 48,
+                    "comment": 16,
+                    "filename": ".history/tests/module-type-tests_20250504134803.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/tests/parser-tests_20250504133935.js"
+                },
+                {
+                    "blank": 18,
+                    "code": 71,
+                    "comment": 16,
+                    "filename": ".history/tests/parser-tests_20250504133937.js"
+                },
+                {
+                    "blank": 18,
+                    "code": 71,
+                    "comment": 16,
+                    "filename": ".history/tests/parser-tests_20250504134250.js"
+                },
+                {
+                    "blank": 18,
+                    "code": 71,
+                    "comment": 16,
+                    "filename": ".history/tests/parser-tests_20250504134818.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/tests/parser-type-tests_20250504134018.js"
+                },
+                {
+                    "blank": 27,
+                    "code": 80,
+                    "comment": 28,
+                    "filename": ".history/tests/parser-type-tests_20250504134021.js"
+                },
+                {
+                    "blank": 27,
+                    "code": 80,
+                    "comment": 28,
+                    "filename": ".history/tests/parser-type-tests_20250504134842.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/tests/runtets_20250504133807.js"
+                },
+                {
+                    "blank": 11,
+                    "code": 47,
+                    "comment": 8,
+                    "filename": ".history/tests/runtets_20250504133817.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".history/tests/test-utils_20250504133844.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 36,
+                    "comment": 4,
+                    "filename": ".history/tests/test-utils_20250504133846.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 4,
+                    "comment": 0,
+                    "filename": ".npmignore"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": ".travis.yml"
+                },
+                {
+                    "blank": 13,
+                    "code": 15,
+                    "comment": 0,
+                    "filename": "CONTRIBUTING.md"
+                },
+                {
+                    "blank": 1,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "entry.js"
+                },
+                {
+                    "blank": 68,
+                    "code": 350,
+                    "comment": 0,
+                    "filename": "examples/ansic.jison"
+                },
+                {
+                    "blank": 3,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "examples/basic.jison"
+                },
+                {
+                    "blank": 4,
+                    "code": 5,
+                    "comment": 1,
+                    "filename": "examples/basic2.jison"
+                },
+                {
+                    "blank": 7,
+                    "code": 10,
+                    "comment": 1,
+                    "filename": "examples/basic2_lex.jison"
+                },
+                {
+                    "blank": 6,
+                    "code": 14,
+                    "comment": 0,
+                    "filename": "examples/basic_lex.jison"
+                },
+                {
+                    "blank": 11,
+                    "code": 59,
+                    "comment": 3,
+                    "filename": "examples/calculator.jison"
+                },
+                {
+                    "blank": 57,
+                    "code": 532,
+                    "comment": 135,
+                    "filename": "examples/calculator.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 46,
+                    "comment": 1,
+                    "filename": "examples/calculator.json"
+                },
+                {
+                    "blank": 15,
+                    "code": 61,
+                    "comment": 8,
+                    "filename": "examples/classy.jison"
+                },
+                {
+                    "blank": 3,
+                    "code": 36,
+                    "comment": 0,
+                    "filename": "examples/classy.jisonlex"
+                },
+                {
+                    "blank": 14,
+                    "code": 102,
+                    "comment": 8,
+                    "filename": "examples/classy_ast.jison"
+                },
+                {
+                    "blank": 1,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": "examples/classy_test.src"
+                },
+                {
+                    "blank": 8,
+                    "code": 30,
+                    "comment": 1,
+                    "filename": "examples/dism.jison"
+                },
+                {
+                    "blank": 7,
+                    "code": 27,
+                    "comment": 1,
+                    "filename": "examples/dism_lr0.jison"
+                },
+                {
+                    "blank": 3,
+                    "code": 32,
+                    "comment": 0,
+                    "filename": "examples/inherited.y"
+                },
+                {
+                    "blank": 101,
+                    "code": 497,
+                    "comment": 1,
+                    "filename": "examples/jscore.jison"
+                },
+                {
+                    "blank": 19,
+                    "code": 59,
+                    "comment": 0,
+                    "filename": "examples/json.js"
+                },
+                {
+                    "blank": 19,
+                    "code": 60,
+                    "comment": 0,
+                    "filename": "examples/json_ast.js"
+                },
+                {
+                    "blank": 9,
+                    "code": 44,
+                    "comment": 1,
+                    "filename": "examples/lambdacalc.jison"
+                },
+                {
+                    "blank": 15,
+                    "code": 103,
+                    "comment": 8,
+                    "filename": "examples/nv_classy_ast.jison"
+                },
+                {
+                    "blank": 8,
+                    "code": 36,
+                    "comment": 2,
+                    "filename": "examples/phraser.jison"
+                },
+                {
+                    "blank": 8,
+                    "code": 23,
+                    "comment": 1,
+                    "filename": "examples/precedence.jison"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "examples/README"
+                },
+                {
+                    "blank": 8,
+                    "code": 14,
+                    "comment": 1,
+                    "filename": "examples/reduce_conflict.jison"
+                },
+                {
+                    "blank": 13,
+                    "code": 53,
+                    "comment": 1,
+                    "filename": "examples/semwhitespace.jison"
+                },
+                {
+                    "blank": 2,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "examples/semwhitespace_ex.src"
+                },
+                {
+                    "blank": 3,
+                    "code": 11,
+                    "comment": 1,
+                    "filename": "examples/semwhitespace_lex.jison"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "examples/simpletestcalc"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "examples/testcalc"
+                },
+                {
+                    "blank": 25,
+                    "code": 186,
+                    "comment": 0,
+                    "filename": "examples/tikiwikiparser.jison"
+                },
+                {
+                    "blank": 25,
+                    "code": 153,
+                    "comment": 15,
+                    "filename": "lib/cli.js"
+                },
+                {
+                    "blank": 43,
+                    "code": 169,
+                    "comment": 26,
+                    "filename": "lib/core/Generator.js"
+                },
+                {
+                    "blank": 31,
+                    "code": 205,
+                    "comment": 44,
+                    "filename": "lib/core/Parser.js"
+                },
+                {
+                    "blank": 20,
+                    "code": 121,
+                    "comment": 17,
+                    "filename": "lib/generators/LALRGenerator.js"
+                },
+                {
+                    "blank": 6,
+                    "code": 33,
+                    "comment": 11,
+                    "filename": "lib/generators/LLGenerator.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 11,
+                    "comment": 9,
+                    "filename": "lib/generators/LR0Generator.js"
+                },
+                {
+                    "blank": 12,
+                    "code": 55,
+                    "comment": 13,
+                    "filename": "lib/generators/LR1Generator.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 16,
+                    "comment": 11,
+                    "filename": "lib/generators/SLRGenerator.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 37,
+                    "comment": 12,
+                    "filename": "lib/index.js"
+                },
+                {
+                    "blank": 48,
+                    "code": 317,
+                    "comment": 40,
+                    "filename": "lib/parsers/base.js"
+                },
+                {
+                    "blank": 55,
+                    "code": 401,
+                    "comment": 55,
+                    "filename": "lib/parsers/LRParser.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 85,
+                    "comment": 8,
+                    "filename": "lib/utils/Set.js"
+                },
+                {
+                    "blank": 6,
+                    "code": 64,
+                    "comment": 8,
+                    "filename": "lib/utils/Typal.js"
+                },
+                {
+                    "blank": 24,
+                    "code": 158,
+                    "comment": 5,
+                    "filename": "lib_old/cli.js"
+                },
+                {
+                    "blank": 253,
+                    "code": 1478,
+                    "comment": 197,
+                    "filename": "lib_old/jison.js"
+                },
+                {
+                    "blank": 6,
+                    "code": 86,
+                    "comment": 1,
+                    "filename": "lib_old/util/set.js"
+                },
+                {
+                    "blank": 11,
+                    "code": 61,
+                    "comment": 19,
+                    "filename": "lib_old/util/typal.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 10,
+                    "comment": 8,
+                    "filename": "Makefile"
+                },
+                {
+                    "blank": 3,
+                    "code": 1117,
+                    "comment": 0,
+                    "filename": "package-lock.json"
+                },
+                {
+                    "blank": 1,
+                    "code": 51,
+                    "comment": 0,
+                    "filename": "package.json"
+                },
+                {
+                    "blank": 42,
+                    "code": 180,
+                    "comment": 3,
+                    "filename": "ports/php/php.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 8,
+                    "comment": 3,
+                    "filename": "ports/php/readme"
+                },
+                {
+                    "blank": 98,
+                    "code": 493,
+                    "comment": 30,
+                    "filename": "ports/php/template.php"
+                },
+                {
+                    "blank": 32,
+                    "code": 89,
+                    "comment": 16,
+                    "filename": "README.md"
+                },
+                {
+                    "blank": 12,
+                    "code": 57,
+                    "comment": 8,
+                    "filename": "run-tests.js"
+                },
+                {
+                    "filename": "SCR-20250503-qkjb.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 3,
+                    "code": 15,
+                    "comment": 2,
+                    "filename": "test-grammars/bad-grammar.jison"
+                },
+                {
+                    "blank": 7,
+                    "code": 26,
+                    "comment": 1,
+                    "filename": "test-grammars/calc-grammar.jison"
+                },
+                {
+                    "blank": 2,
+                    "code": 11,
+                    "comment": 1,
+                    "filename": "test-grammars/calc-lexer.jisonlex"
+                },
+                {
+                    "blank": 8,
+                    "code": 58,
+                    "comment": 1,
+                    "filename": "test-grammars/calculator.jison"
+                },
+                {
+                    "blank": 31,
+                    "code": 109,
+                    "comment": 0,
+                    "filename": "test-grammars/calculator.json"
+                },
+                {
+                    "blank": 6,
+                    "code": 29,
+                    "comment": 1,
+                    "filename": "test-grammars/conflict-grammar.jison"
+                },
+                {
+                    "blank": 17,
+                    "code": 78,
+                    "comment": 1,
+                    "filename": "test-grammars/json.jison"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "test-output/calc-test-input.txt"
+                },
+                {
+                    "blank": 4,
+                    "code": 18,
+                    "comment": 0,
+                    "filename": "test-output/temp-grammar.jison"
+                },
+                {
+                    "blank": 6,
+                    "code": 23,
+                    "comment": 7,
+                    "filename": "tests/basic-tests.js"
+                },
+                {
+                    "blank": 40,
+                    "code": 238,
+                    "comment": 12,
+                    "filename": "tests/create-grammars.js"
+                },
+                {
+                    "blank": 33,
+                    "code": 144,
+                    "comment": 29,
+                    "filename": "tests/error-tests.js"
+                },
+                {
+                    "blank": 13,
+                    "code": 85,
+                    "comment": 10,
+                    "filename": "tests/generator-tests.js"
+                },
+                {
+                    "blank": 39,
+                    "code": 107,
+                    "comment": 34,
+                    "filename": "tests/integration-tests.js"
+                },
+                {
+                    "blank": 19,
+                    "code": 48,
+                    "comment": 16,
+                    "filename": "tests/module-type-tests.js"
+                },
+                {
+                    "blank": 18,
+                    "code": 71,
+                    "comment": 16,
+                    "filename": "tests/parser-tests.js"
+                },
+                {
+                    "blank": 27,
+                    "code": 80,
+                    "comment": 28,
+                    "filename": "tests/parser-type-tests.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 36,
+                    "comment": 4,
+                    "filename": "tests/test-utils.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "tests_old/all-tests.js"
+                },
+                {
+                    "blank": 72,
+                    "code": 456,
+                    "comment": 0,
+                    "filename": "tests_old/parser/actions.js"
+                },
+                {
+                    "blank": 69,
+                    "code": 378,
+                    "comment": 1,
+                    "filename": "tests_old/parser/api.js"
+                },
+                {
+                    "blank": 22,
+                    "code": 183,
+                    "comment": 0,
+                    "filename": "tests_old/parser/errorlab.js"
+                },
+                {
+                    "blank": 64,
+                    "code": 314,
+                    "comment": 5,
+                    "filename": "tests_old/parser/generator.js"
+                },
+                {
+                    "blank": 29,
+                    "code": 154,
+                    "comment": 0,
+                    "filename": "tests_old/parser/lalr.js"
+                },
+                {
+                    "blank": 13,
+                    "code": 59,
+                    "comment": 0,
+                    "filename": "tests_old/parser/lr0.js"
+                },
+                {
+                    "blank": 26,
+                    "code": 149,
+                    "comment": 3,
+                    "filename": "tests_old/parser/lr1.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": "tests_old/parser/parser-tests.js"
+                },
+                {
+                    "blank": 27,
+                    "code": 210,
+                    "comment": 0,
+                    "filename": "tests_old/parser/precedence.js"
+                },
+                {
+                    "blank": 9,
+                    "code": 43,
+                    "comment": 0,
+                    "filename": "tests_old/parser/slr.js"
+                },
+                {
+                    "blank": 23,
+                    "code": 73,
+                    "comment": 30,
+                    "filename": "tests_old/parser/tables.js"
+                },
+                {
+                    "blank": 15,
+                    "code": 92,
+                    "comment": 1,
+                    "filename": "tests_old/performance.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "tests_old/setup.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 172,
+                    "comment": 0,
+                    "filename": "Untitled"
+                },
+                {
+                    "blank": 67,
+                    "code": 348,
+                    "comment": 0,
+                    "filename": "web/jison/examples/ansic.jison"
+                },
+                {
+                    "blank": 3,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "web/jison/examples/basic.jison"
+                },
+                {
+                    "blank": 4,
+                    "code": 5,
+                    "comment": 1,
+                    "filename": "web/jison/examples/basic2.jison"
+                },
+                {
+                    "blank": 2,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "web/jison/examples/basic2_lex.json"
+                },
+                {
+                    "blank": 13,
+                    "code": 92,
+                    "comment": 0,
+                    "filename": "web/jison/examples/classy.json"
+                },
+                {
+                    "blank": 12,
+                    "code": 114,
+                    "comment": 0,
+                    "filename": "web/jison/examples/classy_ast.json"
+                },
+                {
+                    "blank": 8,
+                    "code": 30,
+                    "comment": 1,
+                    "filename": "web/jison/examples/dism.jison"
+                },
+                {
+                    "blank": 7,
+                    "code": 27,
+                    "comment": 1,
+                    "filename": "web/jison/examples/dism_lr0.jison"
+                },
+                {
+                    "blank": 18,
+                    "code": 68,
+                    "comment": 3,
+                    "filename": "web/jison/examples/json.js"
+                },
+                {
+                    "blank": 19,
+                    "code": 70,
+                    "comment": 3,
+                    "filename": "web/jison/examples/jsonAST.js"
+                },
+                {
+                    "blank": 6,
+                    "code": 17,
+                    "comment": 1,
+                    "filename": "web/jison/examples/precedence.jison"
+                },
+                {
+                    "blank": 8,
+                    "code": 14,
+                    "comment": 1,
+                    "filename": "web/jison/examples/reduce_conflict.jison"
+                },
+                {
+                    "blank": 20,
+                    "code": 80,
+                    "comment": 0,
+                    "filename": "web/jison/index.html"
+                },
+                {
+                    "blank": 41,
+                    "code": 208,
+                    "comment": 0,
+                    "filename": "web/jison/main.js"
+                },
+                {
+                    "blank": 13,
+                    "code": 100,
+                    "comment": 0,
+                    "filename": "web/jison/states.html"
+                },
+                {
+                    "blank": 20,
+                    "code": 79,
+                    "comment": 0,
+                    "filename": "web/jison/usf.html"
+                },
+                {
+                    "blank": 2,
+                    "code": 35,
+                    "comment": 0,
+                    "filename": "web/layouts/default.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 2,
+                    "filename": "web/lib/default.rb"
+                }
+            ]
+        },
+        {
+            "version": "0.2.7",
+            "counttime": "2025-05-04 13:58:25",
+            "filesum": 112,
+            "codesum": 12688,
+            "commentsum": 950,
+            "blanksum": 2123,
+            "statistics": {
+                ".js": {
+                    "code": 7646,
+                    "comment": 839,
+                    "blank": 1361
+                },
+                ".yml": {
+                    "code": 3,
+                    "comment": 0,
+                    "blank": 0
+                },
+                "": {
+                    "code": 204,
+                    "comment": 11,
+                    "blank": 6
+                },
+                ".php": {
+                    "code": 493,
+                    "comment": 30,
+                    "blank": 98
+                },
+                ".jison": {
+                    "code": 2306,
+                    "comment": 50,
+                    "blank": 481
+                },
+                ".y": {
+                    "code": 32,
+                    "comment": 0,
+                    "blank": 3
+                },
+                ".jisonlex": {
+                    "code": 47,
+                    "comment": 1,
+                    "blank": 5
+                },
+                ".src": {
+                    "code": 16,
+                    "comment": 0,
+                    "blank": 3
+                },
+                ".json": {
+                    "code": 1542,
+                    "comment": 1,
+                    "blank": 66
+                },
+                ".md": {
+                    "code": 104,
+                    "comment": 16,
+                    "blank": 45
+                },
+                ".txt": {
+                    "code": 1,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".html": {
+                    "code": 294,
+                    "comment": 0,
+                    "blank": 55
+                },
+                ".rb": {
+                    "code": 0,
+                    "comment": 2,
+                    "blank": 0
+                }
+            },
+            "filelist": [
+                {
+                    "blank": 1,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": ".gitignore"
+                },
+                {
+                    "blank": 0,
+                    "code": 4,
+                    "comment": 0,
+                    "filename": ".npmignore"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": ".travis.yml"
+                },
+                {
+                    "blank": 13,
+                    "code": 15,
+                    "comment": 0,
+                    "filename": "CONTRIBUTING.md"
+                },
+                {
+                    "blank": 1,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "entry.js"
+                },
+                {
+                    "blank": 68,
+                    "code": 350,
+                    "comment": 0,
+                    "filename": "examples/ansic.jison"
+                },
+                {
+                    "blank": 3,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "examples/basic.jison"
+                },
+                {
+                    "blank": 4,
+                    "code": 5,
+                    "comment": 1,
+                    "filename": "examples/basic2.jison"
+                },
+                {
+                    "blank": 7,
+                    "code": 10,
+                    "comment": 1,
+                    "filename": "examples/basic2_lex.jison"
+                },
+                {
+                    "blank": 6,
+                    "code": 14,
+                    "comment": 0,
+                    "filename": "examples/basic_lex.jison"
+                },
+                {
+                    "blank": 11,
+                    "code": 59,
+                    "comment": 3,
+                    "filename": "examples/calculator.jison"
+                },
+                {
+                    "blank": 57,
+                    "code": 532,
+                    "comment": 135,
+                    "filename": "examples/calculator.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 46,
+                    "comment": 1,
+                    "filename": "examples/calculator.json"
+                },
+                {
+                    "blank": 15,
+                    "code": 61,
+                    "comment": 8,
+                    "filename": "examples/classy.jison"
+                },
+                {
+                    "blank": 3,
+                    "code": 36,
+                    "comment": 0,
+                    "filename": "examples/classy.jisonlex"
+                },
+                {
+                    "blank": 14,
+                    "code": 102,
+                    "comment": 8,
+                    "filename": "examples/classy_ast.jison"
+                },
+                {
+                    "blank": 1,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": "examples/classy_test.src"
+                },
+                {
+                    "blank": 8,
+                    "code": 30,
+                    "comment": 1,
+                    "filename": "examples/dism.jison"
+                },
+                {
+                    "blank": 7,
+                    "code": 27,
+                    "comment": 1,
+                    "filename": "examples/dism_lr0.jison"
+                },
+                {
+                    "blank": 3,
+                    "code": 32,
+                    "comment": 0,
+                    "filename": "examples/inherited.y"
+                },
+                {
+                    "blank": 101,
+                    "code": 497,
+                    "comment": 1,
+                    "filename": "examples/jscore.jison"
+                },
+                {
+                    "blank": 19,
+                    "code": 59,
+                    "comment": 0,
+                    "filename": "examples/json.js"
+                },
+                {
+                    "blank": 19,
+                    "code": 60,
+                    "comment": 0,
+                    "filename": "examples/json_ast.js"
+                },
+                {
+                    "blank": 9,
+                    "code": 44,
+                    "comment": 1,
+                    "filename": "examples/lambdacalc.jison"
+                },
+                {
+                    "blank": 15,
+                    "code": 103,
+                    "comment": 8,
+                    "filename": "examples/nv_classy_ast.jison"
+                },
+                {
+                    "blank": 8,
+                    "code": 36,
+                    "comment": 2,
+                    "filename": "examples/phraser.jison"
+                },
+                {
+                    "blank": 8,
+                    "code": 23,
+                    "comment": 1,
+                    "filename": "examples/precedence.jison"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "examples/README"
+                },
+                {
+                    "blank": 8,
+                    "code": 14,
+                    "comment": 1,
+                    "filename": "examples/reduce_conflict.jison"
+                },
+                {
+                    "blank": 13,
+                    "code": 53,
+                    "comment": 1,
+                    "filename": "examples/semwhitespace.jison"
+                },
+                {
+                    "blank": 2,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "examples/semwhitespace_ex.src"
+                },
+                {
+                    "blank": 3,
+                    "code": 11,
+                    "comment": 1,
+                    "filename": "examples/semwhitespace_lex.jison"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "examples/simpletestcalc"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "examples/testcalc"
+                },
+                {
+                    "blank": 25,
+                    "code": 186,
+                    "comment": 0,
+                    "filename": "examples/tikiwikiparser.jison"
+                },
+                {
+                    "blank": 25,
+                    "code": 153,
+                    "comment": 15,
+                    "filename": "lib/cli.js"
+                },
+                {
+                    "blank": 43,
+                    "code": 169,
+                    "comment": 26,
+                    "filename": "lib/core/Generator.js"
+                },
+                {
+                    "blank": 31,
+                    "code": 205,
+                    "comment": 44,
+                    "filename": "lib/core/Parser.js"
+                },
+                {
+                    "blank": 20,
+                    "code": 121,
+                    "comment": 17,
+                    "filename": "lib/generators/LALRGenerator.js"
+                },
+                {
+                    "blank": 6,
+                    "code": 33,
+                    "comment": 11,
+                    "filename": "lib/generators/LLGenerator.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 11,
+                    "comment": 9,
+                    "filename": "lib/generators/LR0Generator.js"
+                },
+                {
+                    "blank": 12,
+                    "code": 55,
+                    "comment": 13,
+                    "filename": "lib/generators/LR1Generator.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 16,
+                    "comment": 11,
+                    "filename": "lib/generators/SLRGenerator.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 37,
+                    "comment": 12,
+                    "filename": "lib/index.js"
+                },
+                {
+                    "blank": 48,
+                    "code": 317,
+                    "comment": 40,
+                    "filename": "lib/parsers/base.js"
+                },
+                {
+                    "blank": 55,
+                    "code": 401,
+                    "comment": 55,
+                    "filename": "lib/parsers/LRParser.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 85,
+                    "comment": 8,
+                    "filename": "lib/utils/Set.js"
+                },
+                {
+                    "blank": 6,
+                    "code": 64,
+                    "comment": 8,
+                    "filename": "lib/utils/Typal.js"
+                },
+                {
+                    "blank": 24,
+                    "code": 158,
+                    "comment": 5,
+                    "filename": "lib_old/cli.js"
+                },
+                {
+                    "blank": 253,
+                    "code": 1478,
+                    "comment": 197,
+                    "filename": "lib_old/jison.js"
+                },
+                {
+                    "blank": 6,
+                    "code": 86,
+                    "comment": 1,
+                    "filename": "lib_old/util/set.js"
+                },
+                {
+                    "blank": 11,
+                    "code": 61,
+                    "comment": 19,
+                    "filename": "lib_old/util/typal.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 10,
+                    "comment": 8,
+                    "filename": "Makefile"
+                },
+                {
+                    "blank": 3,
+                    "code": 1117,
+                    "comment": 0,
+                    "filename": "package-lock.json"
+                },
+                {
+                    "blank": 1,
+                    "code": 51,
+                    "comment": 0,
+                    "filename": "package.json"
+                },
+                {
+                    "blank": 42,
+                    "code": 180,
+                    "comment": 3,
+                    "filename": "ports/php/php.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 8,
+                    "comment": 3,
+                    "filename": "ports/php/readme"
+                },
+                {
+                    "blank": 98,
+                    "code": 493,
+                    "comment": 30,
+                    "filename": "ports/php/template.php"
+                },
+                {
+                    "blank": 32,
+                    "code": 89,
+                    "comment": 16,
+                    "filename": "README.md"
+                },
+                {
+                    "blank": 12,
+                    "code": 57,
+                    "comment": 8,
+                    "filename": "run-tests.js"
+                },
+                {
+                    "filename": "SCR-20250503-qkjb.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 3,
+                    "code": 15,
+                    "comment": 2,
+                    "filename": "test-grammars/bad-grammar.jison"
+                },
+                {
+                    "blank": 7,
+                    "code": 26,
+                    "comment": 1,
+                    "filename": "test-grammars/calc-grammar.jison"
+                },
+                {
+                    "blank": 2,
+                    "code": 11,
+                    "comment": 1,
+                    "filename": "test-grammars/calc-lexer.jisonlex"
+                },
+                {
+                    "blank": 8,
+                    "code": 58,
+                    "comment": 1,
+                    "filename": "test-grammars/calculator.jison"
+                },
+                {
+                    "blank": 31,
+                    "code": 109,
+                    "comment": 0,
+                    "filename": "test-grammars/calculator.json"
+                },
+                {
+                    "blank": 6,
+                    "code": 29,
+                    "comment": 1,
+                    "filename": "test-grammars/conflict-grammar.jison"
+                },
+                {
+                    "blank": 17,
+                    "code": 78,
+                    "comment": 1,
+                    "filename": "test-grammars/json.jison"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "test-output/calc-test-input.txt"
+                },
+                {
+                    "blank": 4,
+                    "code": 18,
+                    "comment": 0,
+                    "filename": "test-output/temp-grammar.jison"
+                },
+                {
+                    "blank": 6,
+                    "code": 23,
+                    "comment": 7,
+                    "filename": "tests/basic-tests.js"
+                },
+                {
+                    "blank": 40,
+                    "code": 238,
+                    "comment": 12,
+                    "filename": "tests/create-grammars.js"
+                },
+                {
+                    "blank": 33,
+                    "code": 144,
+                    "comment": 29,
+                    "filename": "tests/error-tests.js"
+                },
+                {
+                    "blank": 13,
+                    "code": 85,
+                    "comment": 10,
+                    "filename": "tests/generator-tests.js"
+                },
+                {
+                    "blank": 39,
+                    "code": 107,
+                    "comment": 34,
+                    "filename": "tests/integration-tests.js"
+                },
+                {
+                    "blank": 19,
+                    "code": 48,
+                    "comment": 16,
+                    "filename": "tests/module-type-tests.js"
+                },
+                {
+                    "blank": 18,
+                    "code": 71,
+                    "comment": 16,
+                    "filename": "tests/parser-tests.js"
+                },
+                {
+                    "blank": 27,
+                    "code": 80,
+                    "comment": 28,
+                    "filename": "tests/parser-type-tests.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 36,
+                    "comment": 4,
+                    "filename": "tests/test-utils.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "tests_old/all-tests.js"
+                },
+                {
+                    "blank": 72,
+                    "code": 456,
+                    "comment": 0,
+                    "filename": "tests_old/parser/actions.js"
+                },
+                {
+                    "blank": 69,
+                    "code": 378,
+                    "comment": 1,
+                    "filename": "tests_old/parser/api.js"
+                },
+                {
+                    "blank": 22,
+                    "code": 183,
+                    "comment": 0,
+                    "filename": "tests_old/parser/errorlab.js"
+                },
+                {
+                    "blank": 64,
+                    "code": 314,
+                    "comment": 5,
+                    "filename": "tests_old/parser/generator.js"
+                },
+                {
+                    "blank": 29,
+                    "code": 154,
+                    "comment": 0,
+                    "filename": "tests_old/parser/lalr.js"
+                },
+                {
+                    "blank": 13,
+                    "code": 59,
+                    "comment": 0,
+                    "filename": "tests_old/parser/lr0.js"
+                },
+                {
+                    "blank": 26,
+                    "code": 149,
+                    "comment": 3,
+                    "filename": "tests_old/parser/lr1.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": "tests_old/parser/parser-tests.js"
+                },
+                {
+                    "blank": 27,
+                    "code": 210,
+                    "comment": 0,
+                    "filename": "tests_old/parser/precedence.js"
+                },
+                {
+                    "blank": 9,
+                    "code": 43,
+                    "comment": 0,
+                    "filename": "tests_old/parser/slr.js"
+                },
+                {
+                    "blank": 23,
+                    "code": 73,
+                    "comment": 30,
+                    "filename": "tests_old/parser/tables.js"
+                },
+                {
+                    "blank": 15,
+                    "code": 92,
+                    "comment": 1,
+                    "filename": "tests_old/performance.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "tests_old/setup.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 172,
+                    "comment": 0,
+                    "filename": "Untitled"
+                },
+                {
+                    "blank": 67,
+                    "code": 348,
+                    "comment": 0,
+                    "filename": "web/jison/examples/ansic.jison"
+                },
+                {
+                    "blank": 3,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "web/jison/examples/basic.jison"
+                },
+                {
+                    "blank": 4,
+                    "code": 5,
+                    "comment": 1,
+                    "filename": "web/jison/examples/basic2.jison"
+                },
+                {
+                    "blank": 2,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "web/jison/examples/basic2_lex.json"
+                },
+                {
+                    "blank": 13,
+                    "code": 92,
+                    "comment": 0,
+                    "filename": "web/jison/examples/classy.json"
+                },
+                {
+                    "blank": 12,
+                    "code": 114,
+                    "comment": 0,
+                    "filename": "web/jison/examples/classy_ast.json"
+                },
+                {
+                    "blank": 8,
+                    "code": 30,
+                    "comment": 1,
+                    "filename": "web/jison/examples/dism.jison"
+                },
+                {
+                    "blank": 7,
+                    "code": 27,
+                    "comment": 1,
+                    "filename": "web/jison/examples/dism_lr0.jison"
+                },
+                {
+                    "blank": 18,
+                    "code": 68,
+                    "comment": 3,
+                    "filename": "web/jison/examples/json.js"
+                },
+                {
+                    "blank": 19,
+                    "code": 70,
+                    "comment": 3,
+                    "filename": "web/jison/examples/jsonAST.js"
+                },
+                {
+                    "blank": 6,
+                    "code": 17,
+                    "comment": 1,
+                    "filename": "web/jison/examples/precedence.jison"
+                },
+                {
+                    "blank": 8,
+                    "code": 14,
+                    "comment": 1,
+                    "filename": "web/jison/examples/reduce_conflict.jison"
+                },
+                {
+                    "blank": 20,
+                    "code": 80,
+                    "comment": 0,
+                    "filename": "web/jison/index.html"
+                },
+                {
+                    "blank": 41,
+                    "code": 208,
+                    "comment": 0,
+                    "filename": "web/jison/main.js"
+                },
+                {
+                    "blank": 13,
+                    "code": 100,
+                    "comment": 0,
+                    "filename": "web/jison/states.html"
+                },
+                {
+                    "blank": 20,
+                    "code": 79,
+                    "comment": 0,
+                    "filename": "web/jison/usf.html"
+                },
+                {
+                    "blank": 2,
+                    "code": 35,
+                    "comment": 0,
+                    "filename": "web/layouts/default.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 2,
+                    "filename": "web/lib/default.rb"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,488 @@
+===============================================================================
+EXTENSION NAME : linecounter
+EXTENSION VERSION : 0.2.7
+-------------------------------------------------------------------------------
+count time : 2025-05-04 13:57:54
+count workspace : /Users/shaafsalman/Desktop/jison
+total files : 318
+total code lines : 28590
+total comment lines : 5322
+total blank lines : 5371
+
+    statistics
+   |      extension|     total code|  total comment|    total blank|percent|
+   -------------------------------------------------------------------------
+   |            .js|          23510|           5188|           4598|     82|
+   |           .yml|              3|              0|              0|  0.010|
+   |           .php|            493|             30|             98|    1.7|
+   |               |            242|             34|             17|   0.85|
+   |            .md|            104|             16|             45|   0.36|
+   |           .src|             16|              0|              3|  0.056|
+   |         .jison|           2306|             50|            481|    8.1|
+   |          .json|           1542|              1|             66|    5.4|
+   |             .y|             32|              0|              3|   0.11|
+   |           .txt|              1|              0|              0| 0.0035|
+   |      .jisonlex|             47|              1|              5|   0.16|
+   |            .rb|              0|              2|              0|    0.0|
+   |          .html|            294|              0|             55|    1.0|
+   -------------------------------------------------------------------------
+.gitignore, code is 6, comment is 0, blank is 1.
+.history/lib/algorithms/lookahead_20250503192807.js, code is 0, comment is 0, blank is 0.
+.history/lib/algorithms/lookahead_20250503193137.js, code is 173, comment is 60, blank is 30.
+.history/lib/algorithms/table-builder_20250503192807.js, code is 0, comment is 0, blank is 0.
+.history/lib/algorithms/table-builder_20250503193216.js, code is 187, comment is 93, blank is 40.
+.history/lib/cli/grammar-processor_20250503192807.js, code is 0, comment is 0, blank is 0.
+.history/lib/cli/grammar-processor_20250503193055.js, code is 38, comment is 27, blank is 11.
+.history/lib/cli/grammar_20250503192455, code is 0, comment is 0, blank is 0.
+.history/lib/cli/grammar_20250503192502, code is 38, comment is 23, blank is 11.
+.history/lib/cli/index_20250503192102.js, code is 0, comment is 0, blank is 0.
+.history/lib/cli/index_20250503192413.js, code is 70, comment is 61, blank is 20.
+.history/lib/cli/index_20250503193109.js, code is 62, comment is 67, blank is 19.
+.history/lib/cli/index_20250503193112.js, code is 0, comment is 0, blank is 0.
+.history/lib/cli/index_20250503193117.js, code is 73, comment is 70, blank is 21.
+.history/lib/cli/index_20250504124623.js, code is 155, comment is 16, blank is 24.
+.history/lib/cli/options_20250503192102.js, code is 0, comment is 0, blank is 0.
+.history/lib/cli/options_20250503192351.js, code is 71, comment is 16, blank is 7.
+.history/lib/cli/options_20250503193017.js, code is 53, comment is 15, blank is 4.
+.history/lib/cli/options_20250503193046.js, code is 71, comment is 20, blank is 7.
+.history/lib/cli_20250504052219.js, code is 0, comment is 0, blank is 0.
+.history/lib/cli_20250504052408.js, code is 51, comment is 11, blank is 11.
+.history/lib/cli_20250504131145.js, code is 154, comment is 13, blank is 24.
+.history/lib/cli_20250504132048.js, code is 153, comment is 15, blank is 25.
+.history/lib/common/constants_20250504051056.js, code is 0, comment is 0, blank is 0.
+.history/lib/common/constants_20250504051147.js, code is 4, comment is 14, blank is 2.
+.history/lib/common/helpers_20250504051056.js, code is 0, comment is 0, blank is 0.
+.history/lib/common/helpers_20250504051154.js, code is 62, comment is 16, blank is 13.
+.history/lib/core/code-generator_20250503192807.js, code is 0, comment is 0, blank is 0.
+.history/lib/core/code-generator_20250503194451.js, code is 238, comment is 84, blank is 49.
+.history/lib/core/code-generator_20250503194524.js, code is 0, comment is 0, blank is 0.
+.history/lib/core/code-generator_20250503194902.js, code is 492, comment is 194, blank is 109.
+.history/lib/core/Generator_20250504130517.js, code is 0, comment is 0, blank is 0.
+.history/lib/core/Generator_20250504130626.js, code is 168, comment is 26, blank is 43.
+.history/lib/core/Generator_20250504130952.js, code is 168, comment is 26, blank is 43.
+.history/lib/core/Generator_20250504132104.js, code is 169, comment is 26, blank is 43.
+.history/lib/core/grammar_20250503192102.js, code is 0, comment is 0, blank is 0.
+.history/lib/core/grammar_20250503192203.js, code is 57, comment is 32, blank is 14.
+.history/lib/core/grammar_20250503192945.js, code is 64, comment is 37, blank is 16.
+.history/lib/core/item-set_20250504052606.js, code is 0, comment is 0, blank is 0.
+.history/lib/core/item-set_20250504052705.js, code is 40, comment is 9, blank is 7.
+.history/lib/core/item_20250504052606.js, code is 0, comment is 0, blank is 0.
+.history/lib/core/item_20250504052659.js, code is 29, comment is 9, blank is 7.
+.history/lib/core/jison-engine_20250504052219.js, code is 0, comment is 0, blank is 0.
+.history/lib/core/jison-engine_20250504052246.js, code is 25, comment is 10, blank is 6.
+.history/lib/core/nonterminal_20250503192807.js, code is 0, comment is 0, blank is 0.
+.history/lib/core/nonterminal_20250503192931.js, code is 23, comment is 24, blank is 7.
+.history/lib/core/nonterminal_20250504052653.js, code is 20, comment is 9, blank is 5.
+.history/lib/core/parser_20250504052219.js, code is 0, comment is 0, blank is 0.
+.history/lib/core/parser_20250504052253.js, code is 32, comment is 13, blank is 8.
+.history/lib/core/parser_20250504124607.js, code is 210, comment is 46, blank is 34.
+.history/lib/core/parser_20250504130613.js, code is 205, comment is 44, blank is 31.
+.history/lib/core/parser_20250504130942.js, code is 205, comment is 44, blank is 31.
+.history/lib/core/production_20250503192807.js, code is 0, comment is 0, blank is 0.
+.history/lib/core/production_20250503192939.js, code is 26, comment is 27, blank is 5.
+.history/lib/core/production_20250504052644.js, code is 0, comment is 0, blank is 1.
+.history/lib/core/production_20250504052646.js, code is 15, comment is 9, blank is 4.
+.history/lib/factories/lexer-factory_20250504052219.js, code is 0, comment is 0, blank is 0.
+.history/lib/factories/lexer-factory_20250504052401.js, code is 44, comment is 18, blank is 9.
+.history/lib/factories/parser-factory_20250504052219.js, code is 0, comment is 0, blank is 0.
+.history/lib/factories/parser-factory_20250504052354.js, code is 27, comment is 12, blank is 8.
+.history/lib/generator/generator_20250504051056.js, code is 0, comment is 0, blank is 0.
+.history/lib/generator/generator_20250504051338.js, code is 385, comment is 34, blank is 76.
+.history/lib/generator/generator_20250504051610.js, code is 413, comment is 41, blank is 81.
+.history/lib/generators/generator-base_20250504052606.js, code is 0, comment is 0, blank is 0.
+.history/lib/generators/generator-base_20250504124421.js, code is 220, comment is 31, blank is 50.
+.history/lib/generators/lalr-generator_20250504052606.js, code is 0, comment is 0, blank is 0.
+.history/lib/generators/lalr-generator_20250504124447.js, code is 121, comment is 21, blank is 22.
+.history/lib/generators/lalr-generator_20250504125204.js, code is 130, comment is 21, blank is 22.
+.history/lib/generators/LALRGenerator_20250504130517.js, code is 0, comment is 0, blank is 0.
+.history/lib/generators/LALRGenerator_20250504130754.js, code is 119, comment is 17, blank is 20.
+.history/lib/generators/LALRGenerator_20250504131051.js, code is 119, comment is 17, blank is 20.
+.history/lib/generators/LALRGenerator_20250504131917.js, code is 121, comment is 17, blank is 20.
+.history/lib/generators/ll-generator_20250504052606.js, code is 0, comment is 0, blank is 0.
+.history/lib/generators/ll-generator_20250504124518.js, code is 33, comment is 12, blank is 7.
+.history/lib/generators/ll-generator_20250504125223.js, code is 39, comment is 12, blank is 7.
+.history/lib/generators/LLGenerator_20250504130853.js, code is 0, comment is 0, blank is 0.
+.history/lib/generators/LLGenerator_20250504131114.js, code is 23, comment is 11, blank is 4.
+.history/lib/generators/LLGenerator_20250504131122.js, code is 33, comment is 11, blank is 6.
+.history/lib/generators/lr0-generator_20250504052606.js, code is 0, comment is 0, blank is 0.
+.history/lib/generators/lr0-generator_20250504124434.js, code is 11, comment is 12, blank is 5.
+.history/lib/generators/lr0-generator_20250504125155.js, code is 18, comment is 12, blank is 5.
+.history/lib/generators/LR0Generator_20250504130517.js, code is 0, comment is 0, blank is 0.
+.history/lib/generators/LR0Generator_20250504130702.js, code is 391, comment is 54, blank is 54.
+.history/lib/generators/LR0Generator_20250504130735.js, code is 11, comment is 9, blank is 3.
+.history/lib/generators/LR0Generator_20250504131028.js, code is 11, comment is 9, blank is 3.
+.history/lib/generators/lr1-generator_20250504052606.js, code is 0, comment is 0, blank is 0.
+.history/lib/generators/lr1-generator_20250504124504.js, code is 52, comment is 14, blank is 12.
+.history/lib/generators/lr1-generator_20250504125215.js, code is 59, comment is 14, blank is 12.
+.history/lib/generators/lr1-generator_20250504125354.js, code is 78, comment is 15, blank is 16.
+.history/lib/generators/LR1Generator_20250504130517.js, code is 0, comment is 0, blank is 0.
+.history/lib/generators/LR1Generator_20250504130802.js, code is 55, comment is 13, blank is 12.
+.history/lib/generators/LR1Generator_20250504130837.js, code is 0, comment is 0, blank is 0.
+.history/lib/generators/LR1Generator_20250504131106.js, code is 55, comment is 13, blank is 12.
+.history/lib/generators/slr-generator_20250504052606.js, code is 0, comment is 0, blank is 0.
+.history/lib/generators/slr-generator_20250504124456.js, code is 10, comment is 11, blank is 4.
+.history/lib/generators/slr-generator_20250504125059.js, code is 18, comment is 12, blank is 5.
+.history/lib/generators/SLRGenerator_20250504130517.js, code is 0, comment is 0, blank is 0.
+.history/lib/generators/SLRGenerator_20250504130744.js, code is 16, comment is 11, blank is 5.
+.history/lib/generators/SLRGenerator_20250504131043.js, code is 16, comment is 11, blank is 5.
+.history/lib/index_20250504052219.js, code is 0, comment is 0, blank is 0.
+.history/lib/index_20250504052237.js, code is 10, comment is 7, blank is 2.
+.history/lib/index_20250504131132.js, code is 37, comment is 12, blank is 7.
+.history/lib/jison_20250503192807.js, code is 0, comment is 0, blank is 0.
+.history/lib/jison_20250503193258.js, code is 22, comment is 38, blank is 8.
+.history/lib/jison_20250504124633.js, code is 36, comment is 17, blank is 7.
+.history/lib/parser/parser_20250504051056.js, code is 0, comment is 0, blank is 0.
+.history/lib/parser/parser_20250504051209.js, code is 213, comment is 53, blank is 49.
+.history/lib/parsers/base_20250504130853.js, code is 0, comment is 0, blank is 0.
+.history/lib/parsers/base_20250504131158.js, code is 317, comment is 40, blank is 48.
+.history/lib/parsers/lalr_20250503192807.js, code is 0, comment is 0, blank is 0.
+.history/lib/parsers/lalr_20250503193317.js, code is 153, comment is 68, blank is 48.
+.history/lib/parsers/lalr_20250503193326.js, code is 0, comment is 0, blank is 0.
+.history/lib/parsers/lalr_20250503193421.js, code is 448, comment is 185, blank is 117.
+.history/lib/parsers/ll1_20250503192807.js, code is 0, comment is 0, blank is 0.
+.history/lib/parsers/ll1_20250503194304.js, code is 1, comment is 0, blank is 0.
+.history/lib/parsers/ll1_20250503194308.js, code is 219, comment is 120, blank is 66.
+.history/lib/parsers/lr-item_20250503193624.js, code is 0, comment is 0, blank is 0.
+.history/lib/parsers/lr-item_20250503193632.js, code is 66, comment is 61, blank is 13.
+.history/lib/parsers/lr0_20250503192807.js, code is 0, comment is 0, blank is 0.
+.history/lib/parsers/lr0_20250503193559.js, code is 285, comment is 144, blank is 80.
+.history/lib/parsers/lr1_20250503192807.js, code is 0, comment is 0, blank is 0.
+.history/lib/parsers/lr1_20250503194053.js, code is 342, comment is 200, blank is 93.
+.history/lib/parsers/LRParser_20250504130517.js, code is 0, comment is 0, blank is 0.
+.history/lib/parsers/LRParser_20250504130722.js, code is 391, comment is 54, blank is 54.
+.history/lib/parsers/LRParser_20250504131012.js, code is 391, comment is 54, blank is 54.
+.history/lib/parsers/LRParser_20250504131334.js, code is 401, comment is 55, blank is 55.
+.history/lib/parsers/parser-base_20250503192102.js, code is 0, comment is 0, blank is 0.
+.history/lib/parsers/parser-base_20250503192325.js, code is 36, comment is 37, blank is 10.
+.history/lib/parsers/parser-base_20250503192956.js, code is 41, comment is 42, blank is 12.
+.history/lib/parsers/parser-factory_20250503192807.js, code is 0, comment is 0, blank is 0.
+.history/lib/parsers/parser-factory_20250503193008.js, code is 27, comment is 32, blank is 11.
+.history/lib/parsers/slr_20250503192807.js, code is 0, comment is 0, blank is 0.
+.history/lib/parsers/slr_20250503193833.js, code is 290, comment is 151, blank is 82.
+.history/lib/patterns/conditional-handler_20250504052219.js, code is 0, comment is 0, blank is 0.
+.history/lib/patterns/conditional-handler_20250504052345.js, code is 39, comment is 9, blank is 10.
+.history/lib/patterns/method-object_20250504052219.js, code is 0, comment is 0, blank is 0.
+.history/lib/patterns/method-object_20250504052337.js, code is 41, comment is 16, blank is 10.
+.history/lib/util/debug-mixins_20250504052606.js, code is 0, comment is 0, blank is 0.
+.history/lib/util/debug-mixins_20250504052911.js, code is 77, comment is 14, blank is 15.
+.history/lib/util/error-handler_20250503192102.js, code is 0, comment is 0, blank is 0.
+.history/lib/util/error-handler_20250503192336.js, code is 48, comment is 27, blank is 9.
+.history/lib/util/error-handler_20250503192849.js, code is 48, comment is 31, blank is 9.
+.history/lib/util/helper_20250504052219.js, code is 0, comment is 0, blank is 0.
+.history/lib/util/helper_20250504052310.js, code is 19, comment is 8, blank is 5.
+.history/lib/util/lookahead-mixin_20250504052606.js, code is 0, comment is 0, blank is 0.
+.history/lib/util/lookahead-mixin_20250504052711.js, code is 136, comment is 29, blank is 21.
+.history/lib/util/lr-generator-mixin_20250504052606.js, code is 0, comment is 0, blank is 0.
+.history/lib/util/lr-generator-mixin_20250504052720.js, code is 192, comment is 38, blank is 37.
+.history/lib/util/lr-generator-mixin_20250504052903.js, code is 416, comment is 61, blank is 75.
+.history/lib/util/lr-generator-mixin_20250504125415.js, code is 417, comment is 61, blank is 75.
+.history/lib/util/lr-generator-mixin_20250504125848.js, code is 492, comment is 64, blank is 83.
+.history/lib/util/lr-generator-mixin_20250504125932.js, code is 493, comment is 65, blank is 83.
+.history/lib/util/lr-generator-mixin_20250504125933.js, code is 493, comment is 65, blank is 84.
+.history/lib/util/set_20250503192807.js, code is 0, comment is 0, blank is 0.
+.history/lib/util/set_20250503192904.js, code is 112, comment is 110, blank is 26.
+.history/lib/util/set_20250503192917.js, code is 112, comment is 110, blank is 26.
+.history/lib/util/set_20250504051137.js, code is 108, comment is 13, blank is 24.
+.history/lib/util/set_20250504052303.js, code is 12, comment is 8, blank is 3.
+.history/lib/util/set_20250504052630.js, code is 106, comment is 13, blank is 24.
+.history/lib/util/symbol-table_20250503192311.js, code is 0, comment is 0, blank is 0.
+.history/lib/util/symbol-table_20250503192317.js, code is 32, comment is 38, blank is 8.
+.history/lib/util/typal_20250503192807.js, code is 0, comment is 0, blank is 0.
+.history/lib/util/typal_20250503192856.js, code is 72, comment is 42, blank is 14.
+.history/lib/util/typal_20250504051130.js, code is 65, comment is 19, blank is 14.
+.history/lib/util/typal_20250504052321.js, code is 19, comment is 9, blank is 4.
+.history/lib/util/typal_20250504052616.js, code is 25, comment is 0, blank is 5.
+.history/lib/util/typal_20250504052622.js, code is 68, comment is 19, blank is 10.
+.history/lib/utils/Set_20250504130517.js, code is 0, comment is 0, blank is 0.
+.history/lib/utils/Set_20250504130536.js, code is 85, comment is 8, blank is 5.
+.history/lib/utils/Set_20250504130930.js, code is 85, comment is 8, blank is 5.
+.history/lib/utils/Typal_20250504130517.js, code is 0, comment is 0, blank is 0.
+.history/lib/utils/Typal_20250504130529.js, code is 64, comment is 8, blank is 6.
+.history/lib/utils/Typal_20250504130921.js, code is 64, comment is 8, blank is 6.
+.history/run-tests_20250504133816.js, code is 47, comment is 8, blank is 11.
+.history/run-tests_20250504135014.js, code is 50, comment is 8, blank is 12.
+.history/run-tests_20250504135029.js, code is 57, comment is 8, blank is 12.
+.history/run-tests_20250504135701.js, code is 57, comment is 8, blank is 12.
+.history/tests/basic-tests_20250504133907.js, code is 0, comment is 0, blank is 0.
+.history/tests/basic-tests_20250504133908.js, code is 23, comment is 7, blank is 6.
+.history/tests/basic-tests_20250504134202.js, code is 23, comment is 7, blank is 6.
+.history/tests/create-grammar_20250504133855.js, code is 0, comment is 0, blank is 0.
+.history/tests/create-grammar_20250504133859.js, code is 238, comment is 12, blank is 40.
+.history/tests/error-tests_20250504134031.js, code is 0, comment is 0, blank is 0.
+.history/tests/error-tests_20250504134034.js, code is 144, comment is 29, blank is 33.
+.history/tests/error-tests_20250504134223.js, code is 144, comment is 29, blank is 33.
+.history/tests/error-tests_20250504134643.js, code is 144, comment is 29, blank is 33.
+.history/tests/error-tests_20250504134708.js, code is 144, comment is 29, blank is 33.
+.history/tests/generator-tests_20250504133921.js, code is 0, comment is 0, blank is 0.
+.history/tests/generator-tests_20250504133923.js, code is 85, comment is 10, blank is 13.
+.history/tests/generator-tests_20250504134228.js, code is 85, comment is 10, blank is 13.
+.history/tests/integration-tests_20250504134045.js, code is 0, comment is 0, blank is 0.
+.history/tests/integration-tests_20250504134047.js, code is 107, comment is 34, blank is 39.
+.history/tests/integration-tests_20250504134745.js, code is 107, comment is 34, blank is 39.
+.history/tests/module-type-tests_20250504133959.js, code is 0, comment is 0, blank is 0.
+.history/tests/module-type-tests_20250504134001.js, code is 48, comment is 16, blank is 19.
+.history/tests/module-type-tests_20250504134803.js, code is 48, comment is 16, blank is 19.
+.history/tests/parser-tests_20250504133935.js, code is 0, comment is 0, blank is 0.
+.history/tests/parser-tests_20250504133937.js, code is 71, comment is 16, blank is 18.
+.history/tests/parser-tests_20250504134250.js, code is 71, comment is 16, blank is 18.
+.history/tests/parser-tests_20250504134818.js, code is 71, comment is 16, blank is 18.
+.history/tests/parser-type-tests_20250504134018.js, code is 0, comment is 0, blank is 0.
+.history/tests/parser-type-tests_20250504134021.js, code is 80, comment is 28, blank is 27.
+.history/tests/parser-type-tests_20250504134842.js, code is 80, comment is 28, blank is 27.
+.history/tests/runtets_20250504133807.js, code is 0, comment is 0, blank is 0.
+.history/tests/runtets_20250504133817.js, code is 47, comment is 8, blank is 11.
+.history/tests/test-utils_20250504133844.js, code is 0, comment is 0, blank is 0.
+.history/tests/test-utils_20250504133846.js, code is 36, comment is 4, blank is 7.
+.npmignore, code is 4, comment is 0, blank is 0.
+.travis.yml, code is 3, comment is 0, blank is 0.
+CONTRIBUTING.md, code is 15, comment is 0, blank is 13.
+entry.js, code is 2, comment is 0, blank is 1.
+examples/ansic.jison, code is 350, comment is 0, blank is 68.
+examples/basic.jison, code is 8, comment is 0, blank is 3.
+examples/basic2.jison, code is 5, comment is 1, blank is 4.
+examples/basic2_lex.jison, code is 10, comment is 1, blank is 7.
+examples/basic_lex.jison, code is 14, comment is 0, blank is 6.
+examples/calculator.jison, code is 59, comment is 3, blank is 11.
+examples/calculator.js, code is 532, comment is 135, blank is 57.
+examples/calculator.json, code is 46, comment is 1, blank is 4.
+examples/classy.jison, code is 61, comment is 8, blank is 15.
+examples/classy.jisonlex, code is 36, comment is 0, blank is 3.
+examples/classy_ast.jison, code is 102, comment is 8, blank is 14.
+examples/classy_test.src, code is 6, comment is 0, blank is 1.
+examples/dism.jison, code is 30, comment is 1, blank is 8.
+examples/dism_lr0.jison, code is 27, comment is 1, blank is 7.
+examples/inherited.y, code is 32, comment is 0, blank is 3.
+examples/jscore.jison, code is 497, comment is 1, blank is 101.
+examples/json.js, code is 59, comment is 0, blank is 19.
+examples/json_ast.js, code is 60, comment is 0, blank is 19.
+examples/lambdacalc.jison, code is 44, comment is 1, blank is 9.
+examples/nv_classy_ast.jison, code is 103, comment is 8, blank is 15.
+examples/phraser.jison, code is 36, comment is 2, blank is 8.
+examples/precedence.jison, code is 23, comment is 1, blank is 8.
+examples/README, code is 2, comment is 0, blank is 0.
+examples/reduce_conflict.jison, code is 14, comment is 1, blank is 8.
+examples/semwhitespace.jison, code is 53, comment is 1, blank is 13.
+examples/semwhitespace_ex.src, code is 10, comment is 0, blank is 2.
+examples/semwhitespace_lex.jison, code is 11, comment is 1, blank is 3.
+examples/simpletestcalc, code is 1, comment is 0, blank is 0.
+examples/testcalc, code is 1, comment is 0, blank is 0.
+examples/tikiwikiparser.jison, code is 186, comment is 0, blank is 25.
+lib/cli.js, code is 153, comment is 15, blank is 25.
+lib/core/Generator.js, code is 169, comment is 26, blank is 43.
+lib/core/Parser.js, code is 205, comment is 44, blank is 31.
+lib/generators/LALRGenerator.js, code is 121, comment is 17, blank is 20.
+lib/generators/LLGenerator.js, code is 33, comment is 11, blank is 6.
+lib/generators/LR0Generator.js, code is 11, comment is 9, blank is 3.
+lib/generators/LR1Generator.js, code is 55, comment is 13, blank is 12.
+lib/generators/SLRGenerator.js, code is 16, comment is 11, blank is 5.
+lib/index.js, code is 37, comment is 12, blank is 7.
+lib/parsers/base.js, code is 317, comment is 40, blank is 48.
+lib/parsers/LRParser.js, code is 401, comment is 55, blank is 55.
+lib/utils/Set.js, code is 85, comment is 8, blank is 5.
+lib/utils/Typal.js, code is 64, comment is 8, blank is 6.
+lib_old/cli.js, code is 158, comment is 5, blank is 24.
+lib_old/jison.js, code is 1478, comment is 197, blank is 253.
+lib_old/util/set.js, code is 86, comment is 1, blank is 6.
+lib_old/util/typal.js, code is 61, comment is 19, blank is 11.
+Makefile, code is 10, comment is 8, blank is 4.
+package-lock.json, code is 1117, comment is 0, blank is 3.
+package.json, code is 51, comment is 0, blank is 1.
+ports/php/php.js, code is 180, comment is 3, blank is 42.
+ports/php/readme, code is 8, comment is 3, blank is 1.
+ports/php/template.php, code is 493, comment is 30, blank is 98.
+README.md, code is 89, comment is 16, blank is 32.
+run-tests.js, code is 57, comment is 8, blank is 12.
+SCR-20250503-qkjb.png, it is a binary file.
+test-grammars/bad-grammar.jison, code is 15, comment is 2, blank is 3.
+test-grammars/calc-grammar.jison, code is 26, comment is 1, blank is 7.
+test-grammars/calc-lexer.jisonlex, code is 11, comment is 1, blank is 2.
+test-grammars/calculator.jison, code is 58, comment is 1, blank is 8.
+test-grammars/calculator.json, code is 109, comment is 0, blank is 31.
+test-grammars/conflict-grammar.jison, code is 29, comment is 1, blank is 6.
+test-grammars/json.jison, code is 78, comment is 1, blank is 17.
+test-output/calc-test-input.txt, code is 1, comment is 0, blank is 0.
+test-output/temp-grammar.jison, code is 18, comment is 0, blank is 4.
+tests/basic-tests.js, code is 23, comment is 7, blank is 6.
+tests/create-grammars.js, code is 238, comment is 12, blank is 40.
+tests/error-tests.js, code is 144, comment is 29, blank is 33.
+tests/generator-tests.js, code is 85, comment is 10, blank is 13.
+tests/integration-tests.js, code is 107, comment is 34, blank is 39.
+tests/module-type-tests.js, code is 48, comment is 16, blank is 19.
+tests/parser-tests.js, code is 71, comment is 16, blank is 18.
+tests/parser-type-tests.js, code is 80, comment is 28, blank is 27.
+tests/test-utils.js, code is 36, comment is 4, blank is 7.
+tests_old/all-tests.js, code is 3, comment is 0, blank is 1.
+tests_old/parser/actions.js, code is 456, comment is 0, blank is 72.
+tests_old/parser/api.js, code is 378, comment is 1, blank is 69.
+tests_old/parser/errorlab.js, code is 183, comment is 0, blank is 22.
+tests_old/parser/generator.js, code is 314, comment is 5, blank is 64.
+tests_old/parser/lalr.js, code is 154, comment is 0, blank is 29.
+tests_old/parser/lr0.js, code is 59, comment is 0, blank is 13.
+tests_old/parser/lr1.js, code is 149, comment is 3, blank is 26.
+tests_old/parser/parser-tests.js, code is 12, comment is 0, blank is 1.
+tests_old/parser/precedence.js, code is 210, comment is 0, blank is 27.
+tests_old/parser/slr.js, code is 43, comment is 0, blank is 9.
+tests_old/parser/tables.js, code is 73, comment is 30, blank is 23.
+tests_old/performance.js, code is 92, comment is 1, blank is 15.
+tests_old/setup.js, code is 2, comment is 0, blank is 0.
+Untitled, code is 172, comment is 0, blank is 0.
+web/jison/examples/ansic.jison, code is 348, comment is 0, blank is 67.
+web/jison/examples/basic.jison, code is 8, comment is 0, blank is 3.
+web/jison/examples/basic2.jison, code is 5, comment is 1, blank is 4.
+web/jison/examples/basic2_lex.json, code is 13, comment is 0, blank is 2.
+web/jison/examples/classy.json, code is 92, comment is 0, blank is 13.
+web/jison/examples/classy_ast.json, code is 114, comment is 0, blank is 12.
+web/jison/examples/dism.jison, code is 30, comment is 1, blank is 8.
+web/jison/examples/dism_lr0.jison, code is 27, comment is 1, blank is 7.
+web/jison/examples/json.js, code is 68, comment is 3, blank is 18.
+web/jison/examples/jsonAST.js, code is 70, comment is 3, blank is 19.
+web/jison/examples/precedence.jison, code is 17, comment is 1, blank is 6.
+web/jison/examples/reduce_conflict.jison, code is 14, comment is 1, blank is 8.
+web/jison/index.html, code is 80, comment is 0, blank is 20.
+web/jison/main.js, code is 208, comment is 0, blank is 41.
+web/jison/states.html, code is 100, comment is 0, blank is 13.
+web/jison/usf.html, code is 79, comment is 0, blank is 20.
+web/layouts/default.html, code is 35, comment is 0, blank is 2.
+web/lib/default.rb, code is 0, comment is 2, blank is 0.
+===============================================================================
+===============================================================================
+EXTENSION NAME : linecounter
+EXTENSION VERSION : 0.2.7
+-------------------------------------------------------------------------------
+count time : 2025-05-04 13:58:25
+count workspace : /Users/shaafsalman/Desktop/jison
+total files : 112
+total code lines : 12688
+total comment lines : 950
+total blank lines : 2123
+
+    statistics
+   |      extension|     total code|  total comment|    total blank|percent|
+   -------------------------------------------------------------------------
+   |            .js|           7646|            839|           1361|     60|
+   |           .yml|              3|              0|              0|  0.024|
+   |               |            204|             11|              6|    1.6|
+   |           .php|            493|             30|             98|    3.9|
+   |         .jison|           2306|             50|            481|     18|
+   |             .y|             32|              0|              3|   0.25|
+   |      .jisonlex|             47|              1|              5|   0.37|
+   |           .src|             16|              0|              3|   0.13|
+   |          .json|           1542|              1|             66|     12|
+   |            .md|            104|             16|             45|   0.82|
+   |           .txt|              1|              0|              0| 0.0079|
+   |          .html|            294|              0|             55|    2.3|
+   |            .rb|              0|              2|              0|    0.0|
+   -------------------------------------------------------------------------
+.gitignore, code is 6, comment is 0, blank is 1.
+.npmignore, code is 4, comment is 0, blank is 0.
+.travis.yml, code is 3, comment is 0, blank is 0.
+CONTRIBUTING.md, code is 15, comment is 0, blank is 13.
+entry.js, code is 2, comment is 0, blank is 1.
+examples/ansic.jison, code is 350, comment is 0, blank is 68.
+examples/basic.jison, code is 8, comment is 0, blank is 3.
+examples/basic2.jison, code is 5, comment is 1, blank is 4.
+examples/basic2_lex.jison, code is 10, comment is 1, blank is 7.
+examples/basic_lex.jison, code is 14, comment is 0, blank is 6.
+examples/calculator.jison, code is 59, comment is 3, blank is 11.
+examples/calculator.js, code is 532, comment is 135, blank is 57.
+examples/calculator.json, code is 46, comment is 1, blank is 4.
+examples/classy.jison, code is 61, comment is 8, blank is 15.
+examples/classy.jisonlex, code is 36, comment is 0, blank is 3.
+examples/classy_ast.jison, code is 102, comment is 8, blank is 14.
+examples/classy_test.src, code is 6, comment is 0, blank is 1.
+examples/dism.jison, code is 30, comment is 1, blank is 8.
+examples/dism_lr0.jison, code is 27, comment is 1, blank is 7.
+examples/inherited.y, code is 32, comment is 0, blank is 3.
+examples/jscore.jison, code is 497, comment is 1, blank is 101.
+examples/json.js, code is 59, comment is 0, blank is 19.
+examples/json_ast.js, code is 60, comment is 0, blank is 19.
+examples/lambdacalc.jison, code is 44, comment is 1, blank is 9.
+examples/nv_classy_ast.jison, code is 103, comment is 8, blank is 15.
+examples/phraser.jison, code is 36, comment is 2, blank is 8.
+examples/precedence.jison, code is 23, comment is 1, blank is 8.
+examples/README, code is 2, comment is 0, blank is 0.
+examples/reduce_conflict.jison, code is 14, comment is 1, blank is 8.
+examples/semwhitespace.jison, code is 53, comment is 1, blank is 13.
+examples/semwhitespace_ex.src, code is 10, comment is 0, blank is 2.
+examples/semwhitespace_lex.jison, code is 11, comment is 1, blank is 3.
+examples/simpletestcalc, code is 1, comment is 0, blank is 0.
+examples/testcalc, code is 1, comment is 0, blank is 0.
+examples/tikiwikiparser.jison, code is 186, comment is 0, blank is 25.
+lib/cli.js, code is 153, comment is 15, blank is 25.
+lib/core/Generator.js, code is 169, comment is 26, blank is 43.
+lib/core/Parser.js, code is 205, comment is 44, blank is 31.
+lib/generators/LALRGenerator.js, code is 121, comment is 17, blank is 20.
+lib/generators/LLGenerator.js, code is 33, comment is 11, blank is 6.
+lib/generators/LR0Generator.js, code is 11, comment is 9, blank is 3.
+lib/generators/LR1Generator.js, code is 55, comment is 13, blank is 12.
+lib/generators/SLRGenerator.js, code is 16, comment is 11, blank is 5.
+lib/index.js, code is 37, comment is 12, blank is 7.
+lib/parsers/base.js, code is 317, comment is 40, blank is 48.
+lib/parsers/LRParser.js, code is 401, comment is 55, blank is 55.
+lib/utils/Set.js, code is 85, comment is 8, blank is 5.
+lib/utils/Typal.js, code is 64, comment is 8, blank is 6.
+lib_old/cli.js, code is 158, comment is 5, blank is 24.
+lib_old/jison.js, code is 1478, comment is 197, blank is 253.
+lib_old/util/set.js, code is 86, comment is 1, blank is 6.
+lib_old/util/typal.js, code is 61, comment is 19, blank is 11.
+Makefile, code is 10, comment is 8, blank is 4.
+package-lock.json, code is 1117, comment is 0, blank is 3.
+package.json, code is 51, comment is 0, blank is 1.
+ports/php/php.js, code is 180, comment is 3, blank is 42.
+ports/php/readme, code is 8, comment is 3, blank is 1.
+ports/php/template.php, code is 493, comment is 30, blank is 98.
+README.md, code is 89, comment is 16, blank is 32.
+run-tests.js, code is 57, comment is 8, blank is 12.
+SCR-20250503-qkjb.png, it is a binary file.
+test-grammars/bad-grammar.jison, code is 15, comment is 2, blank is 3.
+test-grammars/calc-grammar.jison, code is 26, comment is 1, blank is 7.
+test-grammars/calc-lexer.jisonlex, code is 11, comment is 1, blank is 2.
+test-grammars/calculator.jison, code is 58, comment is 1, blank is 8.
+test-grammars/calculator.json, code is 109, comment is 0, blank is 31.
+test-grammars/conflict-grammar.jison, code is 29, comment is 1, blank is 6.
+test-grammars/json.jison, code is 78, comment is 1, blank is 17.
+test-output/calc-test-input.txt, code is 1, comment is 0, blank is 0.
+test-output/temp-grammar.jison, code is 18, comment is 0, blank is 4.
+tests/basic-tests.js, code is 23, comment is 7, blank is 6.
+tests/create-grammars.js, code is 238, comment is 12, blank is 40.
+tests/error-tests.js, code is 144, comment is 29, blank is 33.
+tests/generator-tests.js, code is 85, comment is 10, blank is 13.
+tests/integration-tests.js, code is 107, comment is 34, blank is 39.
+tests/module-type-tests.js, code is 48, comment is 16, blank is 19.
+tests/parser-tests.js, code is 71, comment is 16, blank is 18.
+tests/parser-type-tests.js, code is 80, comment is 28, blank is 27.
+tests/test-utils.js, code is 36, comment is 4, blank is 7.
+tests_old/all-tests.js, code is 3, comment is 0, blank is 1.
+tests_old/parser/actions.js, code is 456, comment is 0, blank is 72.
+tests_old/parser/api.js, code is 378, comment is 1, blank is 69.
+tests_old/parser/errorlab.js, code is 183, comment is 0, blank is 22.
+tests_old/parser/generator.js, code is 314, comment is 5, blank is 64.
+tests_old/parser/lalr.js, code is 154, comment is 0, blank is 29.
+tests_old/parser/lr0.js, code is 59, comment is 0, blank is 13.
+tests_old/parser/lr1.js, code is 149, comment is 3, blank is 26.
+tests_old/parser/parser-tests.js, code is 12, comment is 0, blank is 1.
+tests_old/parser/precedence.js, code is 210, comment is 0, blank is 27.
+tests_old/parser/slr.js, code is 43, comment is 0, blank is 9.
+tests_old/parser/tables.js, code is 73, comment is 30, blank is 23.
+tests_old/performance.js, code is 92, comment is 1, blank is 15.
+tests_old/setup.js, code is 2, comment is 0, blank is 0.
+Untitled, code is 172, comment is 0, blank is 0.
+web/jison/examples/ansic.jison, code is 348, comment is 0, blank is 67.
+web/jison/examples/basic.jison, code is 8, comment is 0, blank is 3.
+web/jison/examples/basic2.jison, code is 5, comment is 1, blank is 4.
+web/jison/examples/basic2_lex.json, code is 13, comment is 0, blank is 2.
+web/jison/examples/classy.json, code is 92, comment is 0, blank is 13.
+web/jison/examples/classy_ast.json, code is 114, comment is 0, blank is 12.
+web/jison/examples/dism.jison, code is 30, comment is 1, blank is 8.
+web/jison/examples/dism_lr0.jison, code is 27, comment is 1, blank is 7.
+web/jison/examples/json.js, code is 68, comment is 3, blank is 18.
+web/jison/examples/jsonAST.js, code is 70, comment is 3, blank is 19.
+web/jison/examples/precedence.jison, code is 17, comment is 1, blank is 6.
+web/jison/examples/reduce_conflict.jison, code is 14, comment is 1, blank is 8.
+web/jison/index.html, code is 80, comment is 0, blank is 20.
+web/jison/main.js, code is 208, comment is 0, blank is 41.
+web/jison/states.html, code is 100, comment is 0, blank is 13.
+web/jison/usf.html, code is 79, comment is 0, blank is 20.
+web/layouts/default.html, code is 35, comment is 0, blank is 2.
+web/lib/default.rb, code is 0, comment is 2, blank is 0.
+===============================================================================
