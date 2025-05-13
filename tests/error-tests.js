@@ -8,8 +8,20 @@ const path = require('path');
 const { execSync } = require('child_process');
 const Jison = require('../lib/index');
 
-const TEST_DIR = path.join(__dirname, '../test-output');
-const EXAMPLES_DIR = path.join(__dirname, '../test-grammars');
+// Get absolute paths
+const runTests = require('../run-tests');
+const ROOT_DIR = runTests.ROOT_DIR || path.resolve(__dirname, '../');
+const LIB_DIR = runTests.LIB_DIR || path.join(ROOT_DIR, 'lib');
+const CLI_PATH = runTests.CLI_PATH || path.join(LIB_DIR, 'cli.js');
+const TEST_DIR = runTests.TEST_DIR || path.join(ROOT_DIR, 'test-output');
+const EXAMPLES_DIR = runTests.EXAMPLES_DIR || path.join(ROOT_DIR, 'test-grammars');
+
+// Create directories if they don't exist
+[TEST_DIR, EXAMPLES_DIR].forEach(dir => {
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
+  }
+});
 
 const suite = new TestSuite('Error tests');
 
@@ -58,7 +70,7 @@ suite.test('Grammar syntax errors', () => {
   
   try {
     // Try to compile the bad grammar
-    execSync(`node ../lib/cli.js ${badGrammarFile} -o ${outputFile}`, 
+    execSync(`node ${CLI_PATH} ${badGrammarFile} -o ${outputFile}`, 
       { cwd: path.join(__dirname, '../..') });
     assert(false, 'CLI should throw an error on bad grammar');
   } catch (error) {
@@ -73,7 +85,7 @@ suite.test('Invalid parser type', () => {
   
   try {
     // Try to compile with an invalid parser type
-    execSync(`node ../lib/cli.js ${grammarFile} -p invalid-type -o ${outputFile}`, 
+    execSync(`node ${CLI_PATH} ${grammarFile} -p invalid-type -o ${outputFile}`, 
       { cwd: path.join(__dirname, '../..') });
     
     // If execution continues, make sure the output doesn't use the invalid type
@@ -94,7 +106,7 @@ suite.test('Invalid module type', () => {
   
   try {
     // Try to compile with an invalid module type
-    execSync(`node ../lib/cli.js ${grammarFile} -m invalid-module -o ${outputFile}`, 
+    execSync(`node ${CLI_PATH} ${grammarFile} -m invalid-module -o ${outputFile}`, 
       { cwd: path.join(__dirname, '../..') });
     
     // If execution continues, make sure the output doesn't use the invalid type
@@ -108,22 +120,99 @@ suite.test('Invalid module type', () => {
   }
 });
 
-// Confirm that Array.isArray correctly identifies arrays
-suite.test('Array.isArray returns true for arrays', () => {
-  assert(Array.isArray([]), 'Array.isArray should return true for []');
+// Test conflict resolution
+suite.test('Conflict resolution', () => {
+  // Create a grammar with conflicts
+  const conflictGrammar = `
+    /* Grammar with shift/reduce conflicts */
+    %lex
+    %%
+    \\s+               /* skip whitespace */
+    "if"               return 'IF'
+    "else"             return 'ELSE'
+    "then"             return 'THEN'
+    [a-zA-Z]+          return 'ID'
+    ";"                return ';'
+    <<EOF>>            return 'EOF'
+    .                  return 'INVALID'
+    /lex
+    
+    %start program
+    
+    %%
+    
+    program
+        : stmt EOF
+            { return $1; }
+        ;
+        
+    stmt
+        : IF expr THEN stmt
+            { $$ = {type: 'if', condition: $2, then: $4}; }
+        | IF expr THEN stmt ELSE stmt
+            { $$ = {type: 'if_else', condition: $2, then: $4, else: $6}; }
+        | ID ';'
+            { $$ = {type: 'id', name: $1}; }
+        ;
+        
+    expr
+        : ID
+            { $$ = {type: 'id', name: $1}; }
+        ;
+  `;
+  
+  const conflictGrammarFile = path.join(EXAMPLES_DIR, 'conflict-grammar.jison');
+  fs.writeFileSync(conflictGrammarFile, conflictGrammar);
+  
+  const outputFile = path.join(TEST_DIR, 'conflict-grammar.js');
+  
+  // The conflict should be automatically resolved (dangling else problem)
+  execSync(`node ${CLI_PATH} ${conflictGrammarFile} -o ${outputFile}`, 
+    { cwd: path.join(__dirname, '../..') });
+  
+  // Load the generated parser
+  const conflictParser = require(outputFile);
+  
+  // Test with a simple if-else statement
+  const result = conflictParser.parse('if id then if id then id; else id;');
+  
+  // The else should be associated with the inner if
+  assert(result.type === 'if', 'Outer statement should be a simple if');
+  assert(result.then.type === 'if_else', 'Inner statement should be an if-else');
 });
 
-// Confirm that path.join inserts the platform separator
-suite.test('path.join with two segments', () => {
-  const joined = path.join('foo', 'bar');
-  assert(joined.includes(path.sep), `Joined path "${joined}" should contain "${path.sep}"`);
+// Test direct grammar object usage
+suite.test('Direct grammar object usage', () => {
+  // Create a grammar object directly
+  const grammar = {
+    lex: {
+      rules: [
+        ["\\s+", "/* skip whitespace */"],
+        ["[0-9]+", "return 'NUMBER';"],
+        ["\\+", "return '+';"],
+        ["$", "return 'EOF';"]
+      ]
+    },
+    bnf: {
+      expressions: [["e EOF", "return $1;"]],
+      e: [
+        ["e + e", "$$ = $1 + $3;"],
+        ["NUMBER", "$$ = Number(yytext);"]
+      ]
+    }
+  };
+  
+  try {
+    // Create a parser directly from the grammar object
+    const parser = new Jison.Parser(grammar);
+    
+    // Test the parser
+    const result = parser.parse('2 + 3');
+    assert(result === 5, 'Parser created from direct grammar object should work');
+  } catch (error) {
+    assert(false, `Direct grammar object parser creation failed: ${error.message}`);
+  }
 });
-
-// Confirm that fs.writeFileSync is available
-suite.test('fs.writeFileSync exists', () => {
-  assert(typeof fs.writeFileSync === 'function', 'fs.writeFileSync should be a function');
-});
-
 
 // Export the module
 module.exports = suite;

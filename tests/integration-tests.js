@@ -7,36 +7,185 @@ const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
 
-const TEST_DIR = path.join(__dirname, '../test-output');
-const EXAMPLES_DIR = path.join(__dirname, '../test-grammars');
+// Get absolute paths
+const runTests = require('../run-tests');
+const ROOT_DIR = runTests.ROOT_DIR || path.resolve(__dirname, '../');
+const LIB_DIR = runTests.LIB_DIR || path.join(ROOT_DIR, 'lib');
+const CLI_PATH = runTests.CLI_PATH || path.join(LIB_DIR, 'cli.js');
+const TEST_DIR = runTests.TEST_DIR || path.join(ROOT_DIR, 'test-output');
+const EXAMPLES_DIR = runTests.EXAMPLES_DIR || path.join(ROOT_DIR, 'test-grammars');
+
+// Create directories if they don't exist
+[TEST_DIR, EXAMPLES_DIR].forEach(dir => {
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
+  }
+});
 
 const suite = new TestSuite('Integration tests');
 
-// 1. Sanity check: TEST_DIR is a non-empty string
-suite.test('TEST_DIR is defined', () => {
-  assert(typeof TEST_DIR === 'string' && TEST_DIR.length > 0, 'TEST_DIR should be a non-empty string');
+// Test lexical grammar support
+suite.test('Lexical grammar support', () => {
+  const grammarFile = path.join(EXAMPLES_DIR, 'calc-grammar.jison');
+  const lexerFile = path.join(EXAMPLES_DIR, 'calc-lexer.jisonlex');
+  const outputFile = path.join(TEST_DIR, 'calc-with-lexer.js');
+  
+  // Compile with separate lexer file
+  execSync(`node ${CLI_PATH} ${grammarFile} ${lexerFile} -o ${outputFile}`, 
+    { cwd: path.join(__dirname, '../..') });
+  
+  // Check that the output file exists
+  assert(fs.existsSync(outputFile), 'Output file should exist');
+  
+  // Load the generated parser
+  const calcParser = require(outputFile);
+  
+  // Test the parser
+  const testCases = [
+    { input: '2 + 3', expected: 5 },
+    { input: '2 * 3', expected: 6 },
+    { input: '2 + 3 * 4', expected: 14 }, // Tests precedence
+    { input: '(2 + 3) * 4', expected: 20 },
+  ];
+  
+  testCases.forEach(({ input, expected }) => {
+    const result = calcParser.parse(input);
+    assert(result === expected, 
+      `Parsing "${input}" should return ${expected}, got ${result}`);
+  });
 });
 
-// 2. Sanity check: EXAMPLES_DIR is defined
-suite.test('EXAMPLES_DIR is defined', () => {
-  assert(typeof EXAMPLES_DIR === 'string' && EXAMPLES_DIR.length > 0, 'EXAMPLES_DIR should be a non-empty string');
+// Test JSON input format
+suite.test('JSON input format', () => {
+  const jsonGrammarFile = path.join(EXAMPLES_DIR, 'calculator.json');
+  const outputFile = path.join(TEST_DIR, 'calculator-json.js');
+  
+  // Compile with JSON input format
+  execSync(`node ${CLI_PATH} ${jsonGrammarFile} -j -o ${outputFile}`, 
+    { cwd: path.join(__dirname, '../..') });
+  
+  // Check that the output file exists
+  assert(fs.existsSync(outputFile), 'Output file should exist');
+  
+  // Load the generated parser
+  const calcParser = require(outputFile);
+  
+  // Test the parser
+  const testCases = [
+    { input: '2 + 3', expected: 5 },
+    { input: '2 * 3', expected: 6 },
+    { input: '2 ^ 3', expected: 8 },
+  ];
+  
+  testCases.forEach(({ input, expected }) => {
+    const result = calcParser.parse(input);
+    assert(result === expected, 
+      `Parsing "${input}" should return ${expected}, got ${result}`);
+  });
 });
 
-// 3. fs.existsSync works for TEST_DIR
-suite.test('fs.existsSync for TEST_DIR', () => {
-  const exists = fs.existsSync(TEST_DIR);
-  assert(typeof exists === 'boolean', 'fs.existsSync should return a boolean');
+// Test debug mode
+suite.test('Debug mode', () => {
+  const grammarFile = path.join(EXAMPLES_DIR, 'calculator.jison');
+  const outputFile = path.join(TEST_DIR, 'calculator-debug.js');
+  
+  // Compile with debug mode enabled
+  execSync(`node ${CLI_PATH} ${grammarFile} -t -o ${outputFile}`, 
+    { cwd: path.join(__dirname, '../..') });
+  
+  // Check that the output file exists
+  assert(fs.existsSync(outputFile), 'Output file should exist');
+  
+  // Check if debug info is included in the output
+  const content = fs.readFileSync(outputFile, 'utf8');
+  assert(content.includes('debug: true'), 'Debug mode should be enabled in the output');
+  
+  // Load the generated parser
+  const calcParser = require(outputFile);
+  
+  // Test the parser still works in debug mode
+  const result = calcParser.parse('2 + 3');
+  assert(result === 5, 'Parser in debug mode should correctly evaluate 2 + 3');
 });
 
-// 4. execSync is available and callable
-suite.test('execSync exists', () => {
-  assert(typeof execSync === 'function', 'execSync should be a function');
+// Test module name option
+suite.test('Module name option', () => {
+  const grammarFile = path.join(EXAMPLES_DIR, 'calculator.jison');
+  const outputFile = path.join(TEST_DIR, 'calculator-custom-name.js');
+  
+  // Compile with custom module name
+  execSync(`node ${CLI_PATH} ${grammarFile} --moduleName customCalculator -o ${outputFile}`, 
+    { cwd: path.join(__dirname, '../..') });
+  
+  // Check that the output file exists
+  assert(fs.existsSync(outputFile), 'Output file should exist');
+  
+  // Check if custom module name is used in the output
+  const content = fs.readFileSync(outputFile, 'utf8');
+  assert(content.includes('var customCalculator ='), 
+    'Custom module name should be used in the output');
+  
+  // Load the generated parser and test it
+  const calcParser = require(outputFile);
+  const result = calcParser.parse('2 + 3');
+  assert(result === 5, 'Parser with custom module name should correctly evaluate 2 + 3');
 });
 
-// 5. path.basename returns the last segment
-suite.test('path.basename extracts final segment', () => {
-  const base = path.basename('foo/bar/baz.txt');
-  assert(base === 'baz.txt', 'path.basename should return "baz.txt"');
+// Test input from stdin and output to stdout
+suite.test('Stdin input and stdout output', () => {
+  const tempInputFile = path.join(TEST_DIR, 'temp-grammar.jison');
+  
+  // Create a simple grammar
+  const simpleGrammar = `
+    %lex
+    %%
+    \\s+          /* skip whitespace */
+    [0-9]+        return 'NUMBER'
+    "+"           return '+'
+    <<EOF>>       return 'EOF'
+    /lex
+    
+    %%
+    
+    expressions
+        : e EOF
+            { return $1; }
+        ;
+    
+    e
+        : e '+' NUMBER
+            { $$ = $1 + Number($3); }
+        | NUMBER
+            { $$ = Number($1); }
+        ;
+  `;
+  
+  fs.writeFileSync(tempInputFile, simpleGrammar);
+  
+  // Test piping input to the CLI
+  const result = execSync(`cat ${tempInputFile} | node ../lib/cli.js`, 
+    { cwd: path.join(__dirname, '../..') }).toString();
+  
+  // Check that output contains a parser
+  assert(result.includes('function Parser()'), 'Output should contain a parser');
+  assert(result.includes('parse:'), 'Output should contain parse function');
 });
 
+// Test end-to-end workflow with stdin test cases
+suite.test('End-to-end workflow with test cases', () => {
+  const calculatorFile = path.join(TEST_DIR, 'calculator.js');
+  
+  // Create a test input file
+  const testInputFile = path.join(TEST_DIR, 'calc-test-input.txt');
+  const testInput = '2 + 3 * 4';
+  fs.writeFileSync(testInputFile, testInput);
+  
+  // Run the parser with the test input
+  const result = execSync(`node ${calculatorFile} ${testInputFile}`).toString().trim();
+  
+  // Check the output
+  assert(result === '14', 'Parser should correctly evaluate the test input');
+});
+
+// Export the module
 module.exports = suite;

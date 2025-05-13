@@ -7,33 +7,35 @@
 const fs = require('fs');
 const path = require('path');
 
-// Create test directories
-const TEST_DIR = path.join(__dirname, 'test-output');
-const EXAMPLES_DIR = path.join(__dirname, 'test-grammars');
+// Get absolute paths
 const ROOT_DIR = path.resolve(__dirname);
-const LIB_DIR = path.resolve(ROOT_DIR, '../lib');
+const LIB_DIR = path.resolve(ROOT_DIR, 'lib');
 const CLI_PATH = path.resolve(LIB_DIR, 'cli.js');
+const TEST_DIR = path.resolve(ROOT_DIR, 'test-output');
+const EXAMPLES_DIR = path.resolve(ROOT_DIR, 'test-grammars');
 
-
-if (!fs.existsSync(TEST_DIR)) {
-  fs.mkdirSync(TEST_DIR, { recursive: true });
-}
-if (!fs.existsSync(EXAMPLES_DIR)) {
-  fs.mkdirSync(EXAMPLES_DIR, { recursive: true });
-}
+// Create directories if they don't exist
+[TEST_DIR, EXAMPLES_DIR].forEach(dir => {
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
+  }
+});
 
 // Create sample grammars for testing
 require('./tests/create-grammars');
+
+// Test utilities
+const { TestSuite, assert } = require('./tests/test-utils');
 
 // Load and run all tests
 const testSuites = [
   './tests/basic-tests.js',
   './tests/generator-tests.js',
-  './tests/parser-tests.js',
+  './tests/parser-tests.js', 
   './tests/module-type-tests.js',
   './tests/parser-type-tests.js',
   './tests/error-tests.js',
-  './tests/integration-tests.js',
+  './tests/integration-tests.js'
 ];
 
 console.log('Running Jison tests...\n');
@@ -68,10 +70,13 @@ if (totalFailed > 0) {
 } else {
   console.log('All tests passed successfully!');
 }
+
 module.exports = {
-  ROOT_DIR,
-  LIB_DIR,
-  CLI_PATH,
-  TEST_DIR,
-  EXAMPLES_DIR
+  ROOT_DIR: path.resolve(__dirname),
+  LIB_DIR: path.resolve(__dirname, 'lib'),
+  CLI_PATH: path.resolve(__dirname, 'lib', 'cli.js'),
+  TEST_DIR: path.resolve(__dirname, 'test-output'),
+  EXAMPLES_DIR: path.resolve(__dirname, 'test-grammars'),
+  TestSuite: require('./tests/test-utils').TestSuite,
+  assert: require('./tests/test-utils').assert
 };

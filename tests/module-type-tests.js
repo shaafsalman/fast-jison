@@ -7,8 +7,19 @@ const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
 
-const TEST_DIR = path.join(__dirname, '../test-output');
-const EXAMPLES_DIR = path.join(__dirname, '../test-grammars');
+const runTests = require('../run-tests');
+const ROOT_DIR = runTests.ROOT_DIR || path.resolve(__dirname, '../');
+const LIB_DIR = runTests.LIB_DIR || path.join(ROOT_DIR, 'lib');
+const CLI_PATH = runTests.CLI_PATH || path.join(LIB_DIR, 'cli.js');
+const TEST_DIR = runTests.TEST_DIR || path.join(ROOT_DIR, 'test-output');
+const EXAMPLES_DIR = runTests.EXAMPLES_DIR || path.join(ROOT_DIR, 'test-grammars');
+
+// Create directories if they don't exist
+[TEST_DIR, EXAMPLES_DIR].forEach(dir => {
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
+  }
+});
 
 const suite = new TestSuite('Module type tests');
 
@@ -22,7 +33,7 @@ suite.test('Module type options', () => {
     const outputFile = path.join(TEST_DIR, `calculator-${moduleType}.js`);
     
     // Use the CLI to compile the grammar with specific module type
-    execSync(`node ../lib/cli.js ${grammarFile} -m ${moduleType} -o ${outputFile}`, 
+    execSync(`node ${CLI_PATH} ${grammarFile} -m ${moduleType} -o ${outputFile}`, 
       { cwd: path.join(__dirname, '../..') });
     
     // Check that the output file exists
@@ -42,20 +53,42 @@ suite.test('Module type options', () => {
   });
 });
 
-// Very simple sanity check: TEST_DIR should be a non-empty string
-suite.test('TEST_DIR is non-empty string', () => {
-  assert(typeof TEST_DIR === 'string' && TEST_DIR.length > 0, 'TEST_DIR should be a non-empty string');
+// Test CommonJS module usage
+suite.test('CommonJS module usage', () => {
+  const grammarFile = path.join(EXAMPLES_DIR, 'calculator.jison');
+  const outputFile = path.join(TEST_DIR, 'calculator-commonjs.js');
+  
+  // Compile grammar with CommonJS module type
+  execSync(`node ${CLI_PATH} ${grammarFile} -m commonjs -o ${outputFile}`, 
+    { cwd: path.join(__dirname, '../..') });
+  
+  // Load the parser and test it
+  const parser = require(outputFile);
+  assert(parser.parser, 'CommonJS module should expose parser property');
+  assert(parser.Parser, 'CommonJS module should expose Parser constructor');
+  assert(typeof parser.parse === 'function', 'CommonJS module should expose parse function');
+  
+  // Test actual parsing
+  const result = parser.parse('2 + 3');
+  assert(result === 5, 'CommonJS parser should correctly evaluate 2 + 3');
 });
 
-// Very simple sanity check: EXAMPLES_DIR is non-empty string
-suite.test('EXAMPLES_DIR is non-empty string', () => {
-  assert(typeof EXAMPLES_DIR === 'string' && EXAMPLES_DIR.length > 0, 'EXAMPLES_DIR should be a non-empty string');
+// Test JS module format
+suite.test('JS module format', () => {
+  const grammarFile = path.join(EXAMPLES_DIR, 'calculator.jison');
+  const outputFile = path.join(TEST_DIR, 'calculator-js.js');
+  
+  // Compile grammar with JS module type
+  execSync(`node ${CLI_PATH} ${grammarFile} -m js -o ${outputFile}`, 
+    { cwd: path.join(__dirname, '../..') });
+  
+  // Check generated file structure
+  const content = fs.readFileSync(outputFile, 'utf8');
+  
+  // JS module should define a global variable with the parser
+  assert(content.includes('var calculator ='), 'JS module should define a global variable');
+  assert(content.includes('function Parser()'), 'JS module should define Parser constructor');
 });
 
-// Confirm that fs.existsSync returns a boolean
-suite.test('fs.existsSync returns boolean', () => {
-  const result = fs.existsSync(TEST_DIR);
-  assert(typeof result === 'boolean', 'fs.existsSync should return a boolean');
-});
-
+// Export the module
 module.exports = suite;
